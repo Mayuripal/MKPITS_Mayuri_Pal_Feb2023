@@ -1,0 +1,42 @@
+<html>
+
+<body>
+Enter Radius=<input type="text" id="rad" /><br><br>
+
+
+<input type="button" value="Area" onclick="area();" />
+<input type="button" value="Circumference" onclick="circumference();" /><br><br>
+
+<span id="res">Area =</span><br>
+<span id="ces">circumference =</span>
+</body>
+
+<script language="javascript">
+
+function area()
+{
+	var radius,area;
+	
+
+radius=parseInt(document.getElementById("rad").value);
+
+area=3.14*radius*radius
+
+document.getElementById("res").innerHTML="Area ="+area ;
+
+}
+
+function circumference()
+{
+	var radius,circumference;
+	
+
+radius=parseInt(document.getElementById("rad").value);
+
+circumference=2*3.14*radius
+
+document.getElementById("ces").innerHTML="Circumference ="+circumference;
+}
+
+</script>
+</html>

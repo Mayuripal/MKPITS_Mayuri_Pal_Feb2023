@@ -1,0 +1,48 @@
+<html>
+
+<body>
+First name=<input type="text" id="f" /><br><br>
+Last name =<input type="text" id="l" /><br><br>
+Email     =<input type="text" id="r" /><br><br>
+Mobile no.=<input type="text" id="q" /><br><br>
+
+
+<input type="button" value="Submit" onclick="ok();" /><br><br>
+
+<span id="res">First name :</span><br>
+<span id="ces">Last name :</span><br>
+<span id="ves">Email :</span><br>
+<span id="des">Mobile :</span><br>
+</body>
+
+<script language="javascript">
+
+function ok()
+{
+	var firstname,lastname,email,mobile,fname,lname,e,m;
+	
+
+firstname=(document.getElementById("f").value);
+lastname=(document.getElementById("l").value);
+email=(document.getElementById("r").value);
+mobile=parseInt(document.getElementById("q").value);
+
+fname=firstname
+document.getElementById("res").innerHTML="Firstname :"+fname;
+
+lname=lastname
+document.getElementById("ces").innerHTML="Lastname :"+lname;
+
+e=email
+document.getElementById("ves").innerHTML="Email :"+e;
+
+m=mobile
+document.getElementById("des").innerHTML="Mobile :"+m;
+
+}
+
+
+
+
+</script>
+</html>
