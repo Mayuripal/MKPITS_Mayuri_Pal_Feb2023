@@ -1,0 +1,22 @@
+<html>
+enter number :<input type="text" id="n1" /><br><br>
+
+<input type="button" value="table" onclick="printtable();" />
+
+<script>
+function printtable()
+{
+var num,counter=1;
+var result=1;
+
+num=document.getElementById("n1").value;
+while(counter<=10)
+{
+result=num*counter;
+document.write(num +"*"+ counter + "="+result);
+document.write("<br>")
+counter++;
+}
+}
+</script>
+</html>
