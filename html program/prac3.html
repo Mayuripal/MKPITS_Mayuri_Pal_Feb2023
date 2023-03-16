@@ -9,12 +9,12 @@
 			th {
 				width: 90px;
 				height: 50px;
-				background-color: skyblue;
+				background-color: rgb(157, 224, 251);
 			}
 
 			button {
 				padding: 10px;
-				background-color: white;
+				background-color: rgb(255, 248, 248);
 				width: 40%;
 				font-size: 13px;
 			}
@@ -103,6 +103,7 @@
 	function one() {
         document.getElementById("b1").style.background="red";
 		x = document.getElementById("b1").innerHTML;
+		document.getElementById("b1").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -117,6 +118,7 @@
 	function two() {
         document.getElementById("b2").style.background="red";
 		x = document.getElementById("b2").innerHTML;
+		document.getElementById("b2").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -131,6 +133,7 @@
 	function three() {
 		document.getElementById("b3").style.background="red";
         x = document.getElementById("b3").innerHTML;
+		document.getElementById("b3").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -145,6 +148,7 @@
 	function four() {
 		document.getElementById("b4").style.background="red";
         x = document.getElementById("b4").innerHTML;
+		document.getElementById("b4").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -159,6 +163,7 @@
 	function five() {
 		document.getElementById("b5").style.background="red";
         x = document.getElementById("b5").innerHTML;
+		document.getElementById("b5").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -173,6 +178,7 @@
 	function six() {
 		document.getElementById("b6").style.background="red";
         x = document.getElementById("b6").innerHTML;
+		document.getElementById("b6").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -187,6 +193,7 @@
 	function seven() {
 		document.getElementById("b7").style.background="red";
         x = document.getElementById("b7").innerHTML;
+		document.getElementById("b7").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -201,6 +208,7 @@
 	function eight() {
 		document.getElementById("b8").style.background="red";
         x = document.getElementById("b8").innerHTML;
+		document.getElementById("b8").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -215,6 +223,7 @@
 	function nine() {
 		document.getElementById("b9").style.background="red";
         x = document.getElementById("b9").innerHTML;
+		document.getElementById("b9").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -228,6 +237,7 @@
 	function ten() {
 		document.getElementById("b10").style.background="red";
         x = document.getElementById("b10").innerHTML;
+		document.getElementById("b10").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -242,6 +252,7 @@
 	function eleven() {
 		document.getElementById("b11").style.background="red";
         x = document.getElementById("b11").innerHTML;
+		document.getElementById("b11").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -256,6 +267,7 @@
 	function twelve() {
 		document.getElementById("b12").style.background="red";
         x = document.getElementById("b12").innerHTML;
+		document.getElementById("b12").disabled=true;
 		if (arr1[result] == x) {
 			result = result + 1;
 			if (result == 12) {
@@ -266,6 +278,8 @@
 		}
 		else {
 			alert("You Lost Try Again");
+			counter=-1;
+			clearInterval(counter);
 		}
 	}
 

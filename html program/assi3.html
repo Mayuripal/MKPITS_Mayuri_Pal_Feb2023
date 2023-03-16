@@ -1,0 +1,18 @@
+<html>
+    <h1>wap to convert temp from celcius to fahrenheit.</h1>
+    <body>
+        Celcius :<input type ="text" id="a1" /> <br>
+        <span id="s1">Fahrenheit :</span> <br>
+        <input type="button" value="convert" onclick="converttemp()"; />
+    </body>
+    <script>
+        function converttemp()
+        {
+            var temp=parseFloat(document.getElementById("a1").value);
+            var calculate=(temp*1.8)+32;
+           
+            
+           document.getElementById("s1").innerHTML="Fahrenheit :" +calculate;
+        }   
+    </script>
+</html>
