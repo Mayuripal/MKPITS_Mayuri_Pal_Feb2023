@@ -1,0 +1,8 @@
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\passbyvalue\passbyvalue\bin\Debug\passbyvalue.exe.config
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\passbyvalue\passbyvalue\bin\Debug\passbyvalue.exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\passbyvalue\passbyvalue\bin\Debug\passbyvalue.pdb
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\passbyvalue\passbyvalue\obj\Debug\passbyvalue.csproj.AssemblyReference.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\passbyvalue\passbyvalue\obj\Debug\passbyvalue.csproj.SuggestedBindingRedirects.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\passbyvalue\passbyvalue\obj\Debug\passbyvalue.csproj.CoreCompileInputs.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\passbyvalue\passbyvalue\obj\Debug\passbyvalue.exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\passbyvalue\passbyvalue\obj\Debug\passbyvalue.pdb
