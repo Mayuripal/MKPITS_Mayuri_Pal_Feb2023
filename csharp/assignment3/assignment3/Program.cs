@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,29 +11,25 @@ namespace assignment3
     {
         static void Main(string[] args)
         {
-            int[] arr = new int [3] ;
-            for (int i=0 ; i<arr.Length ; i++)
-            {
-                Console.WriteLine("enter number :");
-                arr[i] = Convert.ToInt32(Console.ReadLine());
-            }
+            int[] arr = { 3, 3, 2, 5, 1, 7, 7 };
+            int sum=0;
+            int num = 0;
 
-            int temp;
-
-            for(int i=0; i<arr.Length; i++)
+            //find 2 repeating numbers
+            for (int i = 0; i < arr.Length; i++)
             {
-                for(int j=i+1;j<arr.Length; j++) 
+                for (int j = i + 1; j < arr.Length; j++)
                 {
                     if (arr[i] == arr[j])
-                    { 
-                        temp = arr[i] + arr[j];
+                    {
+                        num = arr[i] = arr[j];
+                    }
+                    if (arr[i] == arr[j])
+                    {
+
                     }
                 }
-            }
-
-            for (int i=0; i<arr.Length;i++) 
-            {
-                Console.WriteLine(temp);
+                Console.WriteLine(num);
             }
             Console.ReadLine();
         }

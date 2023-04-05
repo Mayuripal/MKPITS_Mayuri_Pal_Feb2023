@@ -13,31 +13,66 @@ namespace assignment2
 {
     public partial class Form1 : Form
     {
-        int counter = 0;
-        int []arr=new int[8];
+        int[,] arr;
+        int row, col;
+        int i=0, j=0;
         public Form1()
         {
             InitializeComponent();
         }
 
+        
+
+        //creating array by taking user input.
         private void button1_Click(object sender, EventArgs e)
         {
-            if(counter<arr.Length)
-            {
-                arr[counter] = Convert.ToInt32(textBox3.Text);
-                counter++;
-            }
-
-            else if (counter>arr.Length) 
-            {
-                button1.Enabled = false;
-            }
-            textBox3.Clear();
+            row = Convert.ToInt32(textBox1.Text);
+            col = Convert.ToInt32(textBox2.Text);
+            arr=new int[row, col];
+            button1.Enabled = false;
+            button2.Enabled = true;
         }
 
+        //entering value in the matrix.
         private void button2_Click(object sender, EventArgs e)
         {
+            if(i<row)
+            {
+                if(j<col)
+                {
+                    arr[i,j]= Convert.ToInt32(textBox3.Text);
+                    textBox3.Clear();
+                    textBox3.Focus();
+                    j=j+1;
+                }
 
+                if(j==col)
+                {
+                    i = i + 1;
+                    j = 0;
+                }
+
+                if (i == row)
+                {
+                   button2.Enabled=false;
+                    button3.Enabled=true;
+                }
+            }
+        }
+
+        //display value of matrix.
+        private void button3_Click(object sender, EventArgs e)
+        {
+            StringBuilder sb = new StringBuilder();
+            for(i=0; i<row; i++) 
+            {
+                for(j=0; j<col; j++)
+                {
+                    sb.Append(arr[i,j]+" ");
+                }
+                sb.Append("\n");
+            }
+            label4.Text = sb.ToString();    
         }
     }
 }
