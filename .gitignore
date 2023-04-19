@@ -1,2 +1,6 @@
 c#
-error.log
+*.log
+.*obj
+*.properties
+*.bin
+*.sln
