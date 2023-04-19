@@ -1,0 +1,8 @@
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clearmethod\clearmethod\bin\Debug\clearmethod.exe.config
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clearmethod\clearmethod\bin\Debug\clearmethod.exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clearmethod\clearmethod\bin\Debug\clearmethod.pdb
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clearmethod\clearmethod\obj\Debug\clearmethod.csproj.AssemblyReference.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clearmethod\clearmethod\obj\Debug\clearmethod.csproj.SuggestedBindingRedirects.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clearmethod\clearmethod\obj\Debug\clearmethod.csproj.CoreCompileInputs.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clearmethod\clearmethod\obj\Debug\clearmethod.exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clearmethod\clearmethod\obj\Debug\clearmethod.pdb

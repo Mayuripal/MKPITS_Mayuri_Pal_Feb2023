@@ -1,0 +1,12 @@
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\bin\Debug\calculator oops.exe.config
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\bin\Debug\calculator oops.exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\bin\Debug\calculator oops.pdb
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\obj\Debug\calculator oops.csproj.AssemblyReference.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\obj\Debug\calculator oops.csproj.SuggestedBindingRedirects.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\obj\Debug\calculator_oops.Properties.Resources.resources
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\obj\Debug\calculator oops.csproj.GenerateResource.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\obj\Debug\calculator oops.csproj.CoreCompileInputs.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\obj\Debug\calculator oops.exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\obj\Debug\calculator oops.pdb
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\obj\Debug\calculator_oops.Form1.resources
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\calculator oops\calculator oops\obj\Debug\calculator_oops.Form2.resources

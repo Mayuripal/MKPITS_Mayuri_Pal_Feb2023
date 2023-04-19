@@ -1,0 +1,8 @@
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\greaternumber\greaternumber\bin\Debug\greaternumber.exe.config
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\greaternumber\greaternumber\bin\Debug\greaternumber.exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\greaternumber\greaternumber\bin\Debug\greaternumber.pdb
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\greaternumber\greaternumber\obj\Debug\greaternumber.csproj.AssemblyReference.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\greaternumber\greaternumber\obj\Debug\greaternumber.csproj.SuggestedBindingRedirects.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\greaternumber\greaternumber\obj\Debug\greaternumber.csproj.CoreCompileInputs.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\greaternumber\greaternumber\obj\Debug\greaternumber.exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\greaternumber\greaternumber\obj\Debug\greaternumber.pdb

@@ -1,0 +1,8 @@
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\bankoverridding\bankoverridding\obj\Debug\bankoverridding.csproj.AssemblyReference.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\bankoverridding\bankoverridding\obj\Debug\bankoverridding.csproj.SuggestedBindingRedirects.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\bankoverridding\bankoverridding\obj\Debug\bankoverridding.csproj.CoreCompileInputs.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\bankoverridding\bankoverridding\bin\Debug\bankoverridding.exe.config
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\bankoverridding\bankoverridding\bin\Debug\bankoverridding.exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\bankoverridding\bankoverridding\bin\Debug\bankoverridding.pdb
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\bankoverridding\bankoverridding\obj\Debug\bankoverridding.exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\bankoverridding\bankoverridding\obj\Debug\bankoverridding.pdb

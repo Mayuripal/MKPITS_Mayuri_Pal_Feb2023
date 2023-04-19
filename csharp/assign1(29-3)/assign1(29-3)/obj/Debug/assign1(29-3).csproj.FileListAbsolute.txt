@@ -1,0 +1,8 @@
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\assign1(29-3)\assign1(29-3)\bin\Debug\assign1(29-3).exe.config
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\assign1(29-3)\assign1(29-3)\bin\Debug\assign1(29-3).exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\assign1(29-3)\assign1(29-3)\bin\Debug\assign1(29-3).pdb
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\assign1(29-3)\assign1(29-3)\obj\Debug\assign1(29-3).csproj.AssemblyReference.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\assign1(29-3)\assign1(29-3)\obj\Debug\assign1(29-3).csproj.SuggestedBindingRedirects.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\assign1(29-3)\assign1(29-3)\obj\Debug\assign1(29-3).csproj.CoreCompileInputs.cache
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\assign1(29-3)\assign1(29-3)\obj\Debug\assign1(29-3).exe
+D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\assign1(29-3)\assign1(29-3)\obj\Debug\assign1(29-3).pdb
