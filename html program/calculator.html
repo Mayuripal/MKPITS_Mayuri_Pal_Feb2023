@@ -2,15 +2,16 @@
 <style>
 td {text-align:center; }
 </style>
-
-<form name="f1"  style="width:200;height:360;border:2px solid gray;">
+<body>
+<center>
+<form name="f1" style="width:250;height:420;border:2px solid black;background-color:blue;">
 
 <table width=100% align=center  >
  <tr>
-	<td><input type=text name="t1" style="width:%;height:40px;padding:5px;border:2px solid black"  /></td>
+	<td><input type=text name="t1" style="width:100%;height:70px;padding:5px;border:2px solid orange;font-size:20;"  /></td>
  </tr>
 <tr>
-	<td><input type=reset  style="width:%;height:40px;padding:5px;border:2px solid black"  /></td>
+	<td><input type=reset  value=AC style="width:50%;height:40px;padding:10px;border:2px solid black;background-color:orange;font-size:20;"  /></td>
  </tr>
 </table>
 
@@ -32,15 +33,17 @@ td {text-align:center; }
 </tr>
 <tr>
 	<td><input type="button" name="b0" value="0" style="padding:15px;" onclick="show0();" /></td>
- 	<td><input type="button" name="b11" value="+" style="padding:15px;" onclick="showplus();" /></td>
-	<td><input type="button" name="b12" value="-" style="padding:15px;" onclick="showminus();" /></td>
+ 	<td><input type="button" name="b11" value="+" style="padding:15px;font-size:20;" onclick="showplus();" /></td>
+	<td><input type="button" name="b12" value="-" style="padding:15px;font-size:20;" onclick="showminus();" /></td>
 </tr>
 <tr>
- 	<td><input type="button" name="b13" value="*" style="padding:15px;" onclick="showmulti();" /></td>
-	<td><input type="button" name="b14" value="/" style="padding:15px;" onclick="showdivide();" /></td>
-	<td><input type="button" name="b15" value="=" style="padding:15px;" onclick="showresult();" /></td>
+ 	<td><input type="button" name="b13" value="*" style="padding:15px;font-size:20;" onclick="showmulti();" /></td>
+	<td><input type="button" name="b14" value="/" style="padding:15px;font-size:20;" onclick="showdivide();" /></td>
+	<td><input type="button" name="b15" value="=" style="padding:15px;background-color:orange;font-size:20;" onclick="showresult();" /></td>
  </tr>
 </table>
+</center>
+</body>
 
 <script>
 var prevnum=0;
