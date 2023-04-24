@@ -1,0 +1,47 @@
+<html>
+<body>
+<center>
+<form name="f1"  style="width:250px;height:80px;border:2px solid lime;">
+<table>
+<tr>
+<td>Enter Number</td>
+</tr>
+<tr>
+<td><input type="text" id="h1" /></td>
+</tr>
+</table>
+<table>
+<tr>
+<td><input type="button" value="show" onclick="check();" />
+</tr>
+</table>
+</form> 
+</center>
+</body>
+
+<script>
+function check()
+{ 
+	var num=(document.getElementById("h1").value);
+	var counter;
+	var flag=0;
+
+for(counter=2;counter<num;counter++)
+	{
+		if(num%counter==0)
+		{
+			flag=1;
+			break;
+		}
+	}
+	if(flag==0)
+	{
+		alert("prime no.");
+	}
+	else
+	{
+		alert("not a prime no.");
+	}
+}
+</script>
+</html>

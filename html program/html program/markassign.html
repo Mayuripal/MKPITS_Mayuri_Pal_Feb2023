@@ -1,0 +1,41 @@
+<html>
+
+<body>
+Marks obtain in Maths=<input type="text" id="m" /><br><br>
+Marks obtain in Physics=<input type="text" id="p" /><br><br>
+Marks obtain in Chemistry=<input type="text" id="c" /><br><br>
+
+
+<input type="button" value="Result" onclick="result();" /><br><br>
+
+<span id="res">Total marks =</span><br>
+<span id="ces">Percentage =</span>
+</body>
+
+<script language="javascript">
+
+function result()
+{
+	var physics,maths,chemistry,total,percentage;
+	
+
+maths=parseInt(document.getElementById("m").value);
+physics=parseInt(document.getElementById("p").value);
+chemistry=parseInt(document.getElementById("c").value);
+
+total=maths+physics+chemistry
+
+document.getElementById("res").innerHTML="Total marks ="+total ;
+
+percentage=total/300*100
+
+document.getElementById("ces").innerHTML="Percentage ="+percentage ;
+
+
+}
+
+
+
+
+</script>
+</html>
