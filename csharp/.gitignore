@@ -1,6 +1,6 @@
+Properties/
 bin/
 obj/
 *.csproj
 *.csproj.user
 *.resx
-Properties/
