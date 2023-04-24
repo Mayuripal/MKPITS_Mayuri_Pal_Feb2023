@@ -1,8 +1,0 @@
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\2dArray\2dArray\bin\Debug\2dArray.exe.config
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\2dArray\2dArray\bin\Debug\2dArray.exe
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\2dArray\2dArray\bin\Debug\2dArray.pdb
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\2dArray\2dArray\obj\Debug\2dArray.csproj.AssemblyReference.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\2dArray\2dArray\obj\Debug\2dArray.csproj.SuggestedBindingRedirects.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\2dArray\2dArray\obj\Debug\2dArray.csproj.CoreCompileInputs.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\2dArray\2dArray\obj\Debug\2dArray.exe
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\2dArray\2dArray\obj\Debug\2dArray.pdb

@@ -1,8 +1,0 @@
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clonemethod\clonemethod\bin\Debug\clonemethod.exe.config
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clonemethod\clonemethod\bin\Debug\clonemethod.exe
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clonemethod\clonemethod\bin\Debug\clonemethod.pdb
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clonemethod\clonemethod\obj\Debug\clonemethod.csproj.AssemblyReference.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clonemethod\clonemethod\obj\Debug\clonemethod.csproj.SuggestedBindingRedirects.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clonemethod\clonemethod\obj\Debug\clonemethod.csproj.CoreCompileInputs.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clonemethod\clonemethod\obj\Debug\clonemethod.exe
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\clonemethod\clonemethod\obj\Debug\clonemethod.pdb

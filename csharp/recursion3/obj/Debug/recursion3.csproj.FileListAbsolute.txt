@@ -1,8 +1,0 @@
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\recursion3\bin\Debug\recursion3.exe.config
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\recursion3\bin\Debug\recursion3.exe
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\recursion3\bin\Debug\recursion3.pdb
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\recursion3\obj\Debug\recursion3.csproj.AssemblyReference.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\recursion3\obj\Debug\recursion3.csproj.SuggestedBindingRedirects.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\recursion3\obj\Debug\recursion3.csproj.CoreCompileInputs.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\recursion3\obj\Debug\recursion3.exe
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\recursion3\obj\Debug\recursion3.pdb

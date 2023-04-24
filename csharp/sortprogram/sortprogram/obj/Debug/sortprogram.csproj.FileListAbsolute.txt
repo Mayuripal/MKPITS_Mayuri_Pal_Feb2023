@@ -1,8 +1,0 @@
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\sortprogram\sortprogram\bin\Debug\sortprogram.exe.config
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\sortprogram\sortprogram\bin\Debug\sortprogram.exe
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\sortprogram\sortprogram\bin\Debug\sortprogram.pdb
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\sortprogram\sortprogram\obj\Debug\sortprogram.csproj.AssemblyReference.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\sortprogram\sortprogram\obj\Debug\sortprogram.csproj.SuggestedBindingRedirects.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\sortprogram\sortprogram\obj\Debug\sortprogram.csproj.CoreCompileInputs.cache
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\sortprogram\sortprogram\obj\Debug\sortprogram.exe
-D:\dotnet\gitch\MayuripalMKPITS_Mayuri_Pal_Feb2023\MKPITS_Mayuri_Pal_Feb2023\csharp\sortprogram\sortprogram\obj\Debug\sortprogram.pdb
