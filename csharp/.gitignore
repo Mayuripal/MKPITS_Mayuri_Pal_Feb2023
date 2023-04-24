@@ -6,4 +6,4 @@ obj/
 *.resx
 .vs/
 *.config
-*.Designer
+*.Designer.cs
