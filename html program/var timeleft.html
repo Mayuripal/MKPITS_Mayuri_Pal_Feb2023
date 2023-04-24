@@ -1,0 +1,18 @@
+<html>
+<script>
+
+var i = 10;
+var time = setInterval(function(){
+  
+if(i <= 0){
+    clearInterval(time);
+    document.getElementById("num").innerHTML = "Finished";
+  } 
+
+else {
+    document.getElementById("num").innerHTML = i ;
+  }
+
+  i -= 1;
+}, 1000);
+</script>

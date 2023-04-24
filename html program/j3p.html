@@ -1,0 +1,20 @@
+<html>
+
+enter number =<input type="text" name="a1" /><br>
+<input type="button" value="submit" onclick="range(document.getElementsByName('a1')[0].value);" />
+
+<script>
+function range(num)
+{
+
+if(num>=1 && num<=30)
+{
+    alert("number entered is between the range");
+  }
+  else
+{
+    alert("number entered is not in the range");    
+  }
+}
+</script>
+</html>

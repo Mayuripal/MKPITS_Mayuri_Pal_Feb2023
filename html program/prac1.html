@@ -1,0 +1,95 @@
+<html>
+<body>
+<style>
+th{width:60px;height:50px;}
+</style>
+
+
+<table align=center>
+<tr>
+<th><button id="b1" value="_" style="width:40%;font-size:25px;text-align:center;" onclick="one()"; /></th>
+<th><button id="b2" value="_" style="width:40%;font-size:25px;text-align:center;" onclick="two()"; /></th>
+<th><button id="b3" value="_" style="width:40%;font-size:25px;text-align:center;" onclick="three()"; /></th>
+</tr>
+</table> 
+<center>
+<input type="button" value="Start" onclick="run()"; />
+</center>
+
+
+</body>
+
+<script>
+var arr=new Array();
+var num=3;
+
+
+do
+{
+	var n1=Math.floor(Math.random()*3)+1;
+	if(!arr.includes(n1))
+	{
+		arr.push(n1);
+	}
+}
+while(arr.length<num);
+
+function run()
+{
+	document.getElementById("b1").innerHTML=arr[0];
+	document.getElementById("b2").innerHTML=arr[1];
+	document.getElementById("b3").innerHTML=arr[2];
+}
+
+var arr1 =[1,2,3];
+var result=0;
+var x;
+
+function one()
+{
+x=document.getElementById("b1").innerHTML;
+	if(arr1[result]==x)
+	{
+		result=result+1;
+	}
+	else
+	{
+		alert("You Lost Try Again");
+	}
+}
+
+function two()
+{
+x=document.getElementById("b2").innerHTML;
+	if(arr1[result]==x)
+	{
+		result=result+1;
+	}
+	else
+	{
+		alert("You Lost Try Again");
+	}
+}
+
+function three()
+{
+x=document.getElementById("b3").innerHTML;
+	if(arr1[result]==x)
+	{
+		result=result+1;
+	if(result==3)
+{
+	alert("congratulations you won the game");
+}	
+}
+	else
+	{
+		alert("You Lost Try Again");
+	}
+}
+
+
+
+
+</script>
+</html>

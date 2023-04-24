@@ -1,0 +1,21 @@
+<html>
+Enter number =<input type="text" name="n1"; /><br><br>
+<input type="button" value="submit" onclick="result(document.getElementsByName('n1')[0].value);" />
+
+<script>
+function result(num)
+{
+
+if(isNaN(num))
+{
+	alert("is not a number");
+}
+else
+{
+	alert("is a valid number");
+}
+
+}
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+<html>
+<form method=post action="mainpage.html" onsubmit="return check()" >
+Username :<input type="text" id="un" />
+Password :<input type="password" id="up" />
+
+<input type="submit" value="submit"  />
+</form>
+
+<script>
+function check()
+{
+var username=document.getElementById("un").value;
+var password=document.getElementById("up").value;
+
+if(username=="" || password=="")
+{
+	alert("please enter valid username or password");
+return false;
+}
+
+else if(password.length<6)
+{
+	alert("password must be of 6 character");
+return false;
+}
+
+
+}
+</script>
+</html>
+ 

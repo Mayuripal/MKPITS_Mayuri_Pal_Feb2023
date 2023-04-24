@@ -1,0 +1,40 @@
+<html>
+Maths marks=<input type="text" id="m1" /><br><br>
+Physics marks=<input type="text" id="m2" /><br><br>
+Chemistry marks=<input type="text" id="m3" /><br><br>
+
+<input type="button" value="result" onclick="check();"><br><br>
+
+<span id="s1">Total =</span><br>
+<span id="s2">Percent =</span><br>
+<span id="s3">Grade =</span><br>
+
+<script>
+function check()
+{
+	var maths=parseInt(document.getElementById("m1").value);
+	var phy=parseInt(document.getElementById("m2").value);
+	var chem=parseInt(document.getElementById("m3").value);
+
+var total=maths+phy+chem;
+document.getElementById("s1").innerHTML="Total ="+total;
+
+var percent=total/300*100;
+document.getElementById("s2").innerHTML="Percentage ="+percent;
+
+if(percent>=75)
+{
+	document.getElementById("s3").innerHTML="Grade =distinction";
+}
+else if(percent>60 && percent<75)
+{
+	document.getElementById("s3").innerHTML="Grade =firstclass";
+}
+else
+{
+	document.getElementById("s3").innerHTML="Grade =fail";
+}
+}
+
+</script>
+</html>
