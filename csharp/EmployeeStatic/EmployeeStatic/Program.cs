@@ -30,6 +30,7 @@ namespace EmployeeStatic
         {
             Employee e1 = new Employee(3214, "mayuri");
             Employee e2 = new Employee(67214, "neha");
+            
             e1.display();
 
             e2.display();   
