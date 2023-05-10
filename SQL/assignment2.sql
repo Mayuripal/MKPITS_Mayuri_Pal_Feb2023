@@ -25,3 +25,16 @@ insert into orders values (70001,150.5,'2012-10-05 ' ,3005 , 5002),
 		------query to display the columns in a specific order like order date, salesman id,
 		----order number and purchase amount from for all the orders.
 select ord_date,salesman_id,ord_no,purch_amt from orders
+
+		------query to find the unique salespeople ID. Return salesman_id
+select distinct salesman_id from orders
+
+		--------query to find the salespeople who lives in the City of 'Paris'.
+			----Return salesperson's name, city. 
+select name,city from salesman where city='paris'
+
+create table customer(cust_id int primary key,cust_name varchar(20),cust_city varchar(20),grade int,salesman_id int,
+constraint c foreign key (salesman_id) references salesman(salesman_id));
+
+		---query to find those customers whose grade is 200. 
+		----Return customer_id, cust_name, city, grade, salesman_id.
