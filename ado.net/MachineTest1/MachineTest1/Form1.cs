@@ -158,7 +158,6 @@ namespace MachineTest1
             {
                 MessageBox.Show("please input quantity");
             }
-            
         }
     }
 }

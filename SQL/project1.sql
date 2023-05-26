@@ -28,7 +28,7 @@ create table InvoiceDetail(Invoice_Detail_ID int primary key identity,Customer_N
 constraint d1 foreign key (Product_Category_ID) references ProductCategory(Product_Category_ID) ,constraint d2 foreign key (Product_ID) references Product(Product_ID));
 select * from InvoiceDetail
 --product name
-select p.product_name from Product p inner join ProductCategory t on p.Product_Type_ID = t.Product_Category_ID where t.Product_Type_Name = Product_Type_Name;
+select p.Product_Name from Product p inner join ProductCategory t on p.Product_Type_ID = t.Product_Category_ID where t.Product_Type_Name = 'Computers';
 --gst details
 select a.CGST,a.SGST,a.IGST from Product_GST_Details a inner join ProductCategory b 
 on a.Product_Gst_ID=b.Product_Gst_ID where b.Product_Type_Name='Printers'
