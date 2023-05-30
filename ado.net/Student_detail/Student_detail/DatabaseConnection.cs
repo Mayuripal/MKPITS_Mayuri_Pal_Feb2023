@@ -86,7 +86,7 @@ namespace Student_detail
             SqlConnection con = GetConnection();
             //creating a insert command
             string query = "delete from stud  where studid=@studid";
-            //@username and @password are sqlparameters
+            //@studid  are sqlparameters
             try
             {
                 //creating an object of sqlcommand class
