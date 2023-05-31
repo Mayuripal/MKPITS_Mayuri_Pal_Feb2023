@@ -15,6 +15,10 @@
             border-style: solid;
             border-width: 1px;
         }
+        .auto-style3 {
+            width: 244px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -24,45 +28,59 @@
         </div>
         <table class="auto-style2">
             <tr>
-                <td>Customer Name</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>Product Name</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>Rate</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>Quantity</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>Payment Mode</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
+                <td class="auto-style3">Customer Name</td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" Text="ok" />
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Product Name</td>
+                <td>
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Rate</td>
+                <td>
+                    <asp:TextBox ID="TextBox3" runat="server" TextMode="Number"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Quantity</td>
+                <td>
+                    <asp:TextBox ID="TextBox4" runat="server" TextMode="Number"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Payment Mode</td>
+                <td>
+                    <asp:RadioButton ID="RadioButton1" runat="server" GroupName="payment mode" Text="CASH" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:RadioButton ID="RadioButton2" runat="server" GroupName="payment mode" Text="EMI" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <asp:Button ID="Button1" runat="server" Text="ok" OnClick="Button1_Click" Width="69px" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>total amount</td>
+                <td class="auto-style3">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td class="auto-style3">total amount</td>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
