@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ADVERTISEMENT>
+	<Ad>
+		<ImageUrl>htmlphoto.jpg</ImageUrl>
+		<Impression>6</Impression>
+	</Ad>
+	<Ad>
+		<ImageUrl>about.jpg</ImageUrl>
+		<Impression>6</Impression>
+	</Ad>
+	<Ad>
+		<ImageUrl>aptitude.png</ImageUrl>
+		<Impression>6</Impression>
+	</Ad>
+</ADVERTISEMENT>

@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.jpg" />
+    <Content Include="ADV.xml" />
+    <Content Include="aptitude.png" />
+    <Content Include="htmlphoto.jpg" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
