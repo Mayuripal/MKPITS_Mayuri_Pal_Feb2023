@@ -17,7 +17,7 @@ namespace Student_detail
         {
             InitializeComponent();
         }
-
+        //INSERT/SAVE  BUTTON
         private void button2_Click(object sender, EventArgs e)
         {
             string gender = null;
@@ -33,13 +33,13 @@ namespace Student_detail
             clearall();
 
         }
-
+        //UPDATE BUTTON
         private void button3_Click(object sender, EventArgs e)
         {
             label8.Text = DatabaseConnection.UpdateUsers(textBox2.Text,Convert.ToInt64(textBox3.Text));
             clearall();
         }
-
+        //DELETE BUTTON
         private void button4_Click(object sender, EventArgs e)
         {
             label8.Text = DatabaseConnection.DeleteUsers(textBox1.Text);

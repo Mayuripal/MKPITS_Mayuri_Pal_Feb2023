@@ -188,6 +188,7 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Cash";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // groupBox4
             // 

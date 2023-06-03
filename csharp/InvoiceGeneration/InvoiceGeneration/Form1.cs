@@ -54,14 +54,15 @@ namespace InvoiceGeneration
 
         public void calculate()
         {
-            double Totalprice = Convert.ToDouble(textBox4.Text) * Convert.ToDouble(textBox5.Text);
-            textBox6.Text = Totalprice.ToString();
-
             double cgstamount = Convert.ToDouble(textBox4.Text) * Convert.ToDouble(textBox7.Text) / 100;
             textBox9.Text = cgstamount.ToString();
 
             double sgstamount = Convert.ToDouble(textBox4.Text) * Convert.ToDouble(textBox8.Text) / 100;
             textBox10.Text = sgstamount.ToString();
+
+            double Total = Convert.ToDouble(textBox4.Text) * Convert.ToDouble(textBox5.Text);
+            double totalprice = Total + cgstamount + sgstamount;
+            textBox6.Text = totalprice.ToString();
         }
 
         private void textBox13_KeyPress(object sender, KeyPressEventArgs e)
@@ -69,6 +70,14 @@ namespace InvoiceGeneration
             if(!char.IsDigit(e.KeyChar)&& !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radioButton4.Checked)
+            {
+                textBox14.Text = textBox6.Text;
             }
         }
     }
