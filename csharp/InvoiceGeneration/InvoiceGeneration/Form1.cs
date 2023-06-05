@@ -78,7 +78,13 @@ namespace InvoiceGeneration
             if(radioButton4.Checked)
             {
                 textBox14.Text = textBox6.Text;
+                textBox15.Text = textBox6.Text;
             }
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

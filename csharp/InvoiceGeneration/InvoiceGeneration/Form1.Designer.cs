@@ -177,6 +177,7 @@
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "EMI";
             this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // radioButton4
             // 
