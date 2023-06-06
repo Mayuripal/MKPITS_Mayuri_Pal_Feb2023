@@ -17,17 +17,9 @@
     </style>
     <form id="form1" runat="server">
        <div >
-           <section class="h-100 h-custom" style="background-color: #8fc4b7;">
-                <div class="container py-5 h-100">
-                     <div class="row d-flex justify-content-center align-items-center h-100">
-                        <div class="col-lg-8 col-xl-6">
-                            <div class="card rounded-3">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img3.webp" class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;" alt="Sample photo" />
-                            </div>
-                        </div>
-                    </div>
-                </div>        
-            </section>
+           
+                     
+           
            <div>
                <section class="h-100 h-custom" style="background-color: #8fc4b7;">
                <div class="card-body p-4 p-md-5">
@@ -38,6 +30,7 @@
                 <div class="form-outline mb-4">
                 <label class="form-label" for="form3Example1q">Name</label>
                 <input type="text" id="form3Example1q" class="form-control" />
+                    <br />
                
               </div>
 
@@ -47,7 +40,7 @@
                           <div class="form-outline datepicker">
                               <label for="exampleDatepicker1" class="form-label">Select a date</label>
                             <input type="text" class="form-control" id="exampleDatepicker1" />
-                            <label for="exampleDatepicker1" class="form-label">Select a date</label>
+                              <br />
                           </div>
 
                 </div>
@@ -59,6 +52,8 @@
                             <option value="3">Male</option>
                             <option value="4">Other</option>
                           </select>
+
+                          <br />
 
                 </div>
               </div>
@@ -72,6 +67,8 @@
                   <option value="4">Class 3</option>
                 </select>
 
+                  <br />
+
               </div>
 
               <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
@@ -79,7 +76,9 @@
 
                   <div class="form-outline">
                     <input type="text" id="form3Example1w" class="form-control" />
-                    <label class="form-label" for="form3Example1w">Registration code</label>
+                    <label class="form-label" for="form3Example1w">
+                      <br />
+                      Registration code</label>
                   </div>
 
                 </div>
@@ -90,7 +89,7 @@
             </div>
 
            </div>
-                </section>
+        </section>
         </div>
     </div>
     </form>
