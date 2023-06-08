@@ -16,9 +16,10 @@ namespace Cookies
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            //code to create temperory cookie
             HttpCookie cookie1 = new HttpCookie("cook2");
             cookie1.Values.Add("username : " ,TextBox1.Text);
-            cookie1.Values.Add("email : " ,TextBox2.Text);
+            //cookie1.Values.Add("email : " ,TextBox2.Text);
             DateTime dt = DateTime.Now;
             TimeSpan ts = new TimeSpan(0, 3, 0);
             cookie1.Expires = dt.Add(ts);
@@ -28,14 +29,15 @@ namespace Cookies
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            //code to retrive cookie from client machine
             HttpCookie cookie1 =Request.Cookies["cook2"];
             if (cookie1 != null)
             {
                 string name = cookie1.Values["username"].ToString();
-                string email = cookie1.Values["email"].ToString();
+                //string email = cookie1.Values["email"].ToString();
 
-                Label1.Text = "username : " + name;
-                Label1.Text = "email : " + email;
+                Label1.Text =name;
+                //Label1.Text = "email : " + email;
             }
             else
             {

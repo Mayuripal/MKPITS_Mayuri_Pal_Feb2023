@@ -84,7 +84,60 @@ namespace InvoiceGeneration
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
+            textBox14.Text = "";
+            textBox15.Text = "";
+            if (textBox14.Text=="")
+            {
+                MessageBox.Show("Please fill price ");
+            }
+            
+           
+           
+        }
 
+        public void net_amount()
+        {
+            double price = Convert.ToDouble(textBox6.Text);
+            double total = Convert.ToDouble(textBox14.Text);
+            if(price>total)
+            {
+                double amount = price - total;
+                textBox15.Text = amount.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Fill Price properly ");
+            }
+            
+        }
+
+        private void textBox14_Leave(object sender, EventArgs e)
+        {
+            net_amount();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            clear_all();
+        }
+
+        public void clear_all()
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            textBox8.Clear();
+            textBox9.Clear();
+            textBox10.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+            textBox13.Clear();
+            
+            textBox16.Clear();
         }
     }
 }
