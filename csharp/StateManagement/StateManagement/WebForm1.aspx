@@ -7,19 +7,7 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-       
-    </form>
-    <h2>Modal Signup Form</h2>
-
-   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign up</button>
-
-    <div id="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content"action="signup.aspx">
    
-              </form>
-    </div>
 
 
 </body>

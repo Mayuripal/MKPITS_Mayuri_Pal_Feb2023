@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
         public static DataSet GetNation()
         {
             SqlConnection conn = GetConnection();
-            string query = "select F2 from Details";
+            string query = "select distint F2 from Details";
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(query,conn);
             da.Fill(ds,"Details");
