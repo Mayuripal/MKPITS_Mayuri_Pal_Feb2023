@@ -10,10 +10,10 @@
             width: 100%;
         }
         .auto-style2 {
-            width: 156px;
+            width: 488px;
         }
         .auto-style3 {
-            width: 290px;
+            width: 506px;
         }
         .auto-style4 {
             text-align: center;
@@ -26,11 +26,6 @@
             <div class="auto-style4">
                 Grid view in asp.net
                 <br />
-                Total Amount
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                <br />
-                Paid Amount&nbsp;
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                 <br />
             </div>
             <table class="auto-style1">
@@ -41,24 +36,50 @@
                         </asp:GridView>
                         <br />
                     </td>
-                    <td class="auto-style3">
-                        <asp:GridView ID="GridView2" runat="server">
-                        </asp:GridView>
-                    </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
                         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Load" />
                     </td>
-                    <td class="auto-style3">
-                        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Show emi" />
-                    </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
             </table>
             <br />
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style3">
+                        <asp:GridView ID="GridView2" runat="server">
+                        </asp:GridView>
+                    &nbsp;<br />
+                Total Amount
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <br />
+                Paid Amount&nbsp;
+                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <br />
+                        <br />
+                        <asp:RadioButton ID="RadioButton1" runat="server" GroupName="mode" Text="Cash" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:RadioButton ID="RadioButton2" runat="server" GroupName="mode" Text="EMI" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Show emi" />
+                    </td>
+                </tr>
+            </table>
+            <br />
+                        <asp:GridView ID="GridView3" runat="server">
+                        </asp:GridView>
+                        <asp:Button ID="Button3" runat="server" Text="Show detail" OnClick="Button3_Click" />
+            <br />
         </div>
+        <br />
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </form>
 </body>
 </html>
