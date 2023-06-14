@@ -16,10 +16,13 @@
             border-width: 1px;
         }
         .auto-style3 {
-            width: 374px;
+            width: 257px;
         }
         .auto-style4 {
-            margin-left: 525px;
+            margin-left: 277px;
+        }
+        .auto-style5 {
+            width: 204px;
         }
     </style>
 </head>
@@ -28,41 +31,49 @@
         <div class="auto-style1">
             <strong>Transaction Details</strong><br />
             <br />
+            Mode&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:RadioButton ID="RadioButton1" runat="server" Text="Issue" />
+&nbsp;&nbsp;&nbsp;
+            <asp:RadioButton ID="RadioButton2" runat="server" Text="Purchase" />
+            <br />
             <table align="center" class="auto-style2">
                 <tr>
-                    <td class="auto-style3">Transaction ID</td>
-                    <td>
-                        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">Item ID</td>
-                    <td>
-                        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                    <td class="auto-style3">Item Name</td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Item_Name" DataValueField="Item_Id" Width="164px">
+                        </asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:StoreManagementConnectionString %>" ProviderName="<%$ ConnectionStrings:StoreManagementConnectionString.ProviderName %>" SelectCommand="SELECT [Item_Id], [Item_Name] FROM [Item_master]"></asp:SqlDataSource>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">Transaction Date</td>
-                    <td>
-                        <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                    <td class="auto-style5">
+                        <asp:TextBox ID="TextBox1" runat="server" Width="158px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">Department ID</td>
-                    <td>
-                        <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                    <td class="auto-style3">
+                        <asp:Label ID="Label2" runat="server" Text="Department Name"></asp:Label>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource2" DataTextField="Department_name" DataValueField="Department_id" Width="162px">
+                        </asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:StoreManagementConnectionString2 %>" ProviderName="<%$ ConnectionStrings:StoreManagementConnectionString2.ProviderName %>" SelectCommand="SELECT [Department_id], [Department_name] FROM [Department_mast]"></asp:SqlDataSource>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">Vendor ID</td>
-                    <td>
-                        <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                    <td class="auto-style3">
+                        <asp:Label ID="Label3" runat="server" Text="Vendor Name"></asp:Label>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="DropDownList3" runat="server" Width="161px">
+                        </asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;Quantity</td>
-                    <td>
-                        <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
+                    <td class="auto-style5">
+                        <asp:TextBox ID="TextBox2" runat="server" Width="154px"></asp:TextBox>
                     </td>
                 </tr>
             </table>

@@ -68,10 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Department.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="Item.aspx" />
     <Content Include="Transaction.aspx" />
     <Content Include="Vendor.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Department.aspx.cs">
@@ -80,6 +82,13 @@
     </Compile>
     <Compile Include="Department.aspx.designer.cs">
       <DependentUpon>Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Item.aspx.cs">
       <DependentUpon>Item.aspx</DependentUpon>
@@ -109,6 +118,13 @@
     </Compile>
     <Compile Include="Vendor.aspx.designer.cs">
       <DependentUpon>Vendor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

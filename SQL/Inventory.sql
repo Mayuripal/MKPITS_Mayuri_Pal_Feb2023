@@ -14,4 +14,4 @@ Create table Transaction_Detail (Transaction_id int identity primary key,Item_Id
 	constraint t2 foreign key (Department_id) references Department_mast(Department_id),
 	constraint t3 foreign key (Vendor_id) references Vendor_mast(Vendor_id));
 	
-	select* from Vendor_mast
+	select* from Item_master

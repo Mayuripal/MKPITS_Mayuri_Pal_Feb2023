@@ -7,12 +7,20 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+        <div class="auto-style1">
+            &nbsp;&nbsp;&nbsp; STORE MANAGEMENT SYSTEM
+            <br />
+            <br />
+            ( INVENTORY )<br />
+            <br />
         </div>
     </form>
 </body>

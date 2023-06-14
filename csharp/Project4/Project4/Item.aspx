@@ -37,43 +37,47 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">Item Name</td>
-                    <td>
-                        <asp:DropDownList ID="DropDownList1" runat="server" Width="181px">
-                        </asp:DropDownList>
-                    </td>
-                </tr>
-                <tr>
                     <td class="auto-style3">Category</td>
                     <td>
-                        <asp:DropDownList ID="DropDownList2" runat="server" Width="182px">
+                        <asp:DropDownList ID="DropDownList1" runat="server" Width="181px">
+                            <asp:ListItem>Electronics</asp:ListItem>
+                            <asp:ListItem>Stationary</asp:ListItem>
+                            <asp:ListItem>Furniture</asp:ListItem>
+                            <asp:ListItem>Consumables</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">Rate</td>
+                    <td class="auto-style3">Item Name</td>
                     <td>
                         <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">Balance Quantity</td>
+                    <td class="auto-style3">Rate</td>
                     <td>
                         <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
                     </td>
                 </tr>
+                <tr>
+                    <td class="auto-style3">Balance Quantity</td>
+                    <td>
+                        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
             </table>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Add" />
+            <asp:Button ID="Button1" runat="server" Text="Add" OnClick="Button1_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" Text="Modify" />
+            <asp:Button ID="Button2" runat="server" Text="Modify" OnClick="Button2_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button3" runat="server" Text="Delete" />
+            <asp:Button ID="Button3" runat="server" Text="Delete" OnClick="Button3_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button4" runat="server" Text="Search" />
+            <asp:Button ID="Button4" runat="server" Text="Search" OnClick="Button4_Click" />
             <br />
             <br />
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <br />
             <br />
             <asp:GridView ID="GridView1" runat="server" CssClass="auto-style4" Width="430px">
             </asp:GridView>
