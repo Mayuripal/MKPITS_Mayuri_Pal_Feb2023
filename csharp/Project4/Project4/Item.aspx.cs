@@ -31,11 +31,11 @@ namespace Project4
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            str = "insert into Item_master values(@Item_Id,@Category,@Item_Name,@Rate,@Balance_quantity)";
+            str = "insert into Item_master values(@Item_Id,@Item_Name,@Category,@Rate,@Balance_quantity)";
             SqlCommand command = new SqlCommand(str, con);
             command.Parameters.AddWithValue("@Item_Id", (Convert.ToInt32(TextBox3.Text)));
-            command.Parameters.AddWithValue("@Category", DropDownList1.SelectedValue);
             command.Parameters.AddWithValue("@Item_Name", (TextBox4.Text));
+            command.Parameters.AddWithValue("@Category", DropDownList1.SelectedValue);
             command.Parameters.AddWithValue("@Rate", (Convert.ToInt32(TextBox5.Text)));
             command.Parameters.AddWithValue("@Balance_quantity", (Convert.ToInt32(TextBox6.Text)));
             con.Open();

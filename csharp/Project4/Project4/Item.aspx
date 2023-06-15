@@ -37,6 +37,12 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="auto-style3">Item Name</td>
+                    <td>
+                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
                     <td class="auto-style3">Category</td>
                     <td>
                         <asp:DropDownList ID="DropDownList1" runat="server" Width="181px">
@@ -45,12 +51,6 @@
                             <asp:ListItem>Furniture</asp:ListItem>
                             <asp:ListItem>Consumables</asp:ListItem>
                         </asp:DropDownList>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">Item Name</td>
-                    <td>
-                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>

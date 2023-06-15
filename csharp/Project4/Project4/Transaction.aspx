@@ -19,7 +19,7 @@
             width: 257px;
         }
         .auto-style4 {
-            margin-left: 277px;
+            margin-left: 644px;
         }
         .auto-style5 {
             width: 204px;
@@ -32,9 +32,9 @@
             <strong>Transaction Details</strong><br />
             <br />
             Mode&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:RadioButton ID="RadioButton1" runat="server" Text="Issue" />
+            <asp:RadioButton ID="RadioButton1" runat="server" Text="Issue" AutoPostBack="True" GroupName="mode" OnCheckedChanged="RadioButton1_CheckedChanged" />
 &nbsp;&nbsp;&nbsp;
-            <asp:RadioButton ID="RadioButton2" runat="server" Text="Purchase" />
+            <asp:RadioButton ID="RadioButton2" runat="server" Text="Purchase" AutoPostBack="True" GroupName="mode" OnCheckedChanged="RadioButton2_CheckedChanged" />
             <br />
             <table align="center" class="auto-style2">
                 <tr>
@@ -48,7 +48,7 @@
                 <tr>
                     <td class="auto-style3">Transaction Date</td>
                     <td class="auto-style5">
-                        <asp:TextBox ID="TextBox1" runat="server" Width="158px"></asp:TextBox>
+                        <asp:TextBox ID="TextBox1" runat="server" Width="158px" TextMode="Date"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -66,8 +66,9 @@
                         <asp:Label ID="Label3" runat="server" Text="Vendor Name"></asp:Label>
                     </td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="DropDownList3" runat="server" Width="161px">
+                        <asp:DropDownList ID="DropDownList3" runat="server" Width="161px" DataSourceID="SqlDataSource3" DataTextField="Vendor_name" DataValueField="Vendor_id">
                         </asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:StoreManagementConnectionString %>" SelectCommand="SELECT [Vendor_id], [Vendor_name] FROM [Vendor_mast]"></asp:SqlDataSource>
                     </td>
                 </tr>
                 <tr>
@@ -78,7 +79,7 @@
                 </tr>
             </table>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Add" />
+            <asp:Button ID="Button1" runat="server" Text="Add" OnClick="Button1_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" Text="Modify" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
