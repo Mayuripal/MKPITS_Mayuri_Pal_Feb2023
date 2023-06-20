@@ -8,4 +8,7 @@ constraint c1 foreign key (ItemId) references ItemMaster(ItemId));
 select * from ItemMaster
 select * from Transactions
 
+Update ItemMaster set BalQty=27 where ItemID=1;
+update Transactions set TransQty=5 where TransID=6;
+
 Insert into ItemMaster values('mouse',10,'12/3/2004'),('keyboard',15,'12/3/2004');

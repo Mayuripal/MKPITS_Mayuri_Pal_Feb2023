@@ -11,6 +11,7 @@ namespace DrivenItProject
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
+        // method to make sql connection
         SqlConnection con=new SqlConnection("server=LAPTOP-90P567RC\\SQLEXPRESS;integrated security=true;database=drivenitdb;");
         SqlCommand cmd = null;
         string query = null;
@@ -22,9 +23,9 @@ namespace DrivenItProject
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            //method to insert record in Transaction table
             try
             {
-
                 query = "insert into Transactions values(@ItemId,@TransType,@TransQty,@TransDate)";
                 cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@ItemId", DropDownList1.SelectedValue);
@@ -43,7 +44,7 @@ namespace DrivenItProject
                 con.Open();
                 cmd.ExecuteNonQuery();
 
-                //getting the balance quatity from item master for particular itemid
+             //getting the balance quatity from item master for particular itemid
                 query = "select max(BalQty)from ItemMaster where ItemId=@ItemId";
                 cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@ItemId", DropDownList1.SelectedValue);
@@ -57,9 +58,9 @@ namespace DrivenItProject
                     bq = bq + Convert.ToInt32(TextBox1.Text);
                 }
 
-                //updating bal qty on item master table
+             //updating bal qty on item master table
                 query = "update ItemMaster set BalQty=@BalQty where ItemId=@ItemId";
-                 cmd = new SqlCommand(query, con);
+                cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@BalQty", bq);
                 cmd.Parameters.AddWithValue("@ItemId", DropDownList1.SelectedValue);
                 cmd.ExecuteNonQuery();
@@ -77,15 +78,9 @@ namespace DrivenItProject
 
         }
 
+        // method to edit / update transaction table
         protected void Button2_Click(object sender, EventArgs e)
         {
-            int updateqty = 0;
-            Response.Write("transaction id" + transid.ToString());
-            updateqty = Convert.ToInt32(TextBox1.Text) - oldtransqty;
-
-            Response.Write("updated qty "+ updateqty.ToString());  
-
-            
             try
             {
                 query = "update Transactions set ItemId=@ItemId,TransType=@TransType,TransQty=@TransQty,TransDate=@TransDate where TransId=@TransId";
@@ -109,12 +104,14 @@ namespace DrivenItProject
                 cmd.ExecuteNonQuery();
 
                 //getting the balance quatity from item master for particular itemid
+                int updateqty = 0;
                 query = "select max(BalQty)from ItemMaster where ItemId=@ItemId";
                 cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@ItemId", DropDownList1.SelectedValue);
                 int bq = Convert.ToInt32(cmd.ExecuteScalar());
-                Response.Write("bq " + bq.ToString());
-                Response.Write("<br>updateqty " + updateqty.ToString());
+                updateqty = Convert.ToInt32(TextBox1.Text) - oldtransqty;
+
+
                 if(RadioButton1.Checked)
                 {
                     bq = bq - updateqty;
@@ -125,7 +122,7 @@ namespace DrivenItProject
                 }
 
                 Response.Write("<br>newupdated qty " + bq.ToString());
-                if(bq<0)
+                if (bq < 0)
                 {
                     Label1.Text = " Stock not avaliable ";
                 }
@@ -139,14 +136,16 @@ namespace DrivenItProject
                 //}
 
                 //updating bal qty on item master table
-                query = "update ItemMaster set BalQty=@BalQty where ItemId=@ItemId";
-                cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@BalQty", bq);
-                cmd.Parameters.AddWithValue("@ItemId", DropDownList1.SelectedValue);
-                cmd.ExecuteNonQuery();
+                else
+                {
+                    query = "update ItemMaster set BalQty=@BalQty where ItemId=@ItemId";
+                    cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@BalQty", bq);
+                    cmd.Parameters.AddWithValue("@ItemId", DropDownList1.SelectedValue);
+                    cmd.ExecuteNonQuery();
 
-                Label1.Text = "record updated sucessfully";
-
+                    Label1.Text = "record updated sucessfully";
+                }
             }
             catch(Exception ex)
             {
@@ -184,6 +183,19 @@ namespace DrivenItProject
             }
 
             transid = Convert.ToInt32(GridView1.SelectedRow.Cells[1].Text);
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            query = "delete from Transactions where TransId=@TransId";
+            SqlCommand cmd= new SqlCommand(query,con);
+
+            cmd.Parameters.AddWithValue("@TransId", transid);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            Label1.Text = " Record deleted ";
         }
     }
 }

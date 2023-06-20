@@ -30,7 +30,6 @@
 &nbsp;&nbsp;
         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Edit" />
 &nbsp;
-        <asp:Button ID="Button3" runat="server" Text="Delete" />
         </p>
     <p>
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
