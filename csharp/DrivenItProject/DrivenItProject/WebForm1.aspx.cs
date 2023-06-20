@@ -59,5 +59,10 @@ namespace DrivenItProject
             }
             finally { con.Close(); }
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            query = "delete from ItemMaster where Item";
+        }
     }
 }

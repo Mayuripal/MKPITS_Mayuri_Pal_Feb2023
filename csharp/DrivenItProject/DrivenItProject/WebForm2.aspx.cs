@@ -62,7 +62,7 @@ namespace DrivenItProject
                  cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@BalQty", bq);
                 cmd.Parameters.AddWithValue("@ItemId", DropDownList1.SelectedValue);
-                cmd.ExecuteNonQuery ();
+                cmd.ExecuteNonQuery();
 
                 Label1.Text = " record inserted ";
             }
@@ -70,18 +70,25 @@ namespace DrivenItProject
             {
                 Label1.Text =ex.ToString();
             }
-            finally { con.Close(); }
-
-            
-
+            finally 
+            { 
+                con.Close();
+            }
 
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            int updateqty = 0;
+            Response.Write("transaction id" + transid.ToString());
+            updateqty = Convert.ToInt32(TextBox1.Text) - oldtransqty;
+
+            Response.Write("updated qty "+ updateqty.ToString());  
+
+            
             try
             {
-                query = "update Transactions set TransType=@TransType,TransQty=@TransQty,TransDate=@TransDate where ItemId=@ItemId";
+                query = "update Transactions set ItemId=@ItemId,TransType=@TransType,TransQty=@TransQty,TransDate=@TransDate where TransId=@TransId";
 
                 cmd = new SqlCommand(query, con);
                 string transt = null;
@@ -93,10 +100,11 @@ namespace DrivenItProject
                 {
                     transt = "R";
                 }
+                cmd.Parameters.AddWithValue("@ItemId", DropDownList1.SelectedValue);
                 cmd.Parameters.AddWithValue("@TransType", transt);
                 cmd.Parameters.AddWithValue("@TransQty", Convert.ToInt32(TextBox1.Text));
                 cmd.Parameters.AddWithValue("@TransDate", TextBox2.Text);
-                cmd.Parameters.AddWithValue("@ItemId",DropDownList1.SelectedValue);
+                cmd.Parameters.AddWithValue("@TransId", transid);
                 con.Open();
                 cmd.ExecuteNonQuery();
 
@@ -105,14 +113,30 @@ namespace DrivenItProject
                 cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@ItemId", DropDownList1.SelectedValue);
                 int bq = Convert.ToInt32(cmd.ExecuteScalar());
-                if (transt == "I")
+                Response.Write("bq " + bq.ToString());
+                Response.Write("<br>updateqty " + updateqty.ToString());
+                if(RadioButton1.Checked)
                 {
-                    bq = bq - Convert.ToInt32(TextBox1.Text);
+                    bq = bq - updateqty;
                 }
-                else if (transt == "R")
+                if (RadioButton2.Checked)
                 {
-                    bq = bq + Convert.ToInt32(TextBox1.Text);
+                    bq = bq + updateqty;
                 }
+
+                Response.Write("<br>newupdated qty " + bq.ToString());
+                if(bq<0)
+                {
+                    Label1.Text = " Stock not avaliable ";
+                }
+                //if (transt == "I")
+                //{
+                //    bq = bq - Convert.ToInt32(TextBox1.Text);
+                //}
+                //else if (transt == "R")
+                //{
+                //    bq = bq + Convert.ToInt32(TextBox1.Text);
+                //}
 
                 //updating bal qty on item master table
                 query = "update ItemMaster set BalQty=@BalQty where ItemId=@ItemId";
@@ -128,13 +152,38 @@ namespace DrivenItProject
             {
                 Label1.Text = ex.ToString();
             }
-            finally { con.Close(); }
+            finally 
+            {
+                con.Close(); 
+            }
+
         }
 
+        static int transid = 0;
+        static int oldtransqty = 0;
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             TextBox1.Text = GridView1.SelectedRow.Cells[4].Text;
-            TextBox2.Text = GridView1.SelectedRow.Cells[5].Text;
+            oldtransqty=Convert.ToInt32(TextBox1.Text); 
+
+            DateTime dd = Convert.ToDateTime(GridView1.SelectedRow.Cells[5].Text);
+            TextBox2.Text = dd.ToString("yyyy-MM-dd");
+
+            DropDownList1.SelectedValue = GridView1.SelectedRow.Cells[2].Text;
+
+            string res = GridView1.SelectedRow.Cells[3].Text;
+            if(res == "I")
+            {
+                RadioButton1.Checked = true;
+                RadioButton2.Checked = false;
+            }
+            if (res == "R")
+            {
+                RadioButton2.Checked = true;
+                RadioButton1.Checked = false;
+            }
+
+            transid = Convert.ToInt32(GridView1.SelectedRow.Cells[1].Text);
         }
     }
 }
