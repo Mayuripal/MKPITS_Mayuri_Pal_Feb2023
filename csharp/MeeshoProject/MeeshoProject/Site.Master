@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MeeshoProject.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> -Online Shopping Site </title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <style type="text/css">
+        .auto-style1 {
+            font-weight: bold;
+            color: #CC0099;
+            background-color: #FFFFFF;
+        }
+        .auto-style2 {
+            color: #FFFFFF;
+        }
+        .auto-style3 {
+            width: 97%;
+            height: 55px;
+        }
+        .auto-style4 {
+            width: 432px;
+        }
+        .auto-style5 {
+            width: 404px;
+        }
+        .auto-style6 {
+            width: 405px;
+        }
+        .auto-style7 {
+            width: 257px;
+        }
+        .auto-style8 {
+            width: 370px;
+        }
+    </style>
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <div class="container">
+               <h1 class="text-start"> <a class="navbar-brand" runat="server" href="~/">
+                   <table class="auto-style3">
+                       <tr>
+                           <td class="auto-style4"> <a class="navbar-brand" runat="server" href="~/"><span class="auto-style1">meesho</span></a></td></h1>
+                           <td class="auto-style6">
+                               <select id="Select1" class="auto-style5" name="D1">
+                                   <option></option>
+                               </select></td>
+                           <td class="auto-style7">Download App</td>
+                           <td class="auto-style8">Become a Supplier</td>
+                           <td></td>
+                       </tr>
+                   </table>
+                   </a>
+           
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+                <div class="container">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item"><a class="nav-link" runat="server" href="~/"><span class="auto-style2">Women</span></a></li>
+                            <li class="nav-item"><a class="nav-link" runat="server" href="~/About"><span class="auto-style2">Men</span></a></li>
+                            <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact"><span class="auto-style2">Kids</span></a></li>
+                            <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact"><span class="auto-style2">Home & Kitchen</span></a></li>
+                            <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact"><span class="auto-style2">Beauty & Kitchen</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+      </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Meesho </p>
+            </footer>
+        </div>
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>
