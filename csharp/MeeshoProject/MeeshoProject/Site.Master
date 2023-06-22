@@ -67,20 +67,7 @@
             </Scripts>
         </asp:ScriptManager>
         <div class="container">
-               <h1 class="text-start"> <a class="navbar-brand" runat="server" href="~/">
-                   <table class="auto-style3">
-                       <tr>
-                           <td class="auto-style4"> <a class="navbar-brand" runat="server" href="~/"><span class="auto-style1">meesho</span></a></td></h1>
-                           <td class="auto-style6">
-                               <select id="Select1" class="auto-style5" name="D1">
-                                   <option></option>
-                               </select></td>
-                           <td class="auto-style7">Download App</td>
-                           <td class="auto-style8">Become a Supplier</td>
-                           <td></td>
-                       </tr>
-                   </table>
-                   </a>
+                 <h2><a class="navbar-brand" runat="server" href="~/"><span class="auto-style1">meesho</span></a></h2>
            
         </div>
         <div>
