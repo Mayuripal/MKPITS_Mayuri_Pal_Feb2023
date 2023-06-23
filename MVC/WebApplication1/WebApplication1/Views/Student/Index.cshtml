@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome to student</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@*write the code*@
+<h2>Student Information</h2>
+@{
+    string Username = "prachi";
+    int sub1 = 90;
+    int sub2 = 30;
+
+    int sub3 = 88;
+    int total = sub1 + sub2 + sub3;
+    float per = (float)(total / 300.0f) * 100.0f;
+
+}
+
+<p>Student Name : @Username</p>
+<p>Student Marks : @total</p>
+<p>Student Percentage : @per</p>
+
+@{
+    string grade = "first";
+    <p>Student grade : @grade</p>
+}
+
+@*To escape an @ symbol in Razor markup, use a second @ symbol:*@
+<p>@@username</p>
+
+@*The email addresses in the following example are untouched by Razor parsing:*@
+<a href="mailto:Support@contoso.com">Support@contoso.com</a>
+
+@*Date Time*@
+<p>@DateTime.Now</p>
+<p>@DateTime.IsLeapYear(2016)</p>
