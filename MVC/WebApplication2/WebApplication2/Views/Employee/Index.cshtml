@@ -20,6 +20,35 @@
     Designation :@(e.Designation)<br />
     Salary :@(e.Salary)
    
+    <hr />
 
+    @{
+        var value = 102;
+    }
+    @if (value % 2 == 0)
+    {
+        <p>The value was even.</p>
+    }
+
+    else
+    {
+        <p>The value was odd.</p>
+    }
+
+    <hr />
+
+    @{
+        var username = "admin";
+        var pass = "admin";
+    }
+
+    @if (username == "admin" && pass == "admin")
+    {
+        <p>login successful</p>
+    }
+    else
+    {
+        <p> invalid username or password</p>
+    }
 
 </div>

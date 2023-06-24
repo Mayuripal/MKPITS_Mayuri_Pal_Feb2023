@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PlantNursery</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PlantNursery.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color:darkgreen;font-family:'Arial Rounded MT';">PlantNursery</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Pots&Planters </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Plantcare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <hr />
+    <br />
+    <div class="container-fluid">
+        <div class="row" align="center">
+            <div class="col-md-3">
+                <b>About us</b><br>
+              <br />
+              Our Story <br>
+              Contact us<br>
+              Locate Stores<br>
+              Own Grown<br>
+              Garden Services<br>
+              Maintanance<br>
+                    
+              
+            </div>
+            <div class="col-md-3">
+                <b>CUSTOMER CARE</b><br />
+                <br />
+                Take The Plant Quiz<br />
+                Track Order<br />
+                Shipping Policy<br />
+                Terms and Conditions<br />
+                Privacy Policy<br />
+                FAQs<br />
+                Terms of Service<br />
+                Refund policy<br />
+            </div>
+            <div class="col-md-3">
+                <b>OFFERS & REWARDS</b><br />
+                <br />
+                Plant Parent Rewards Club<br />
+                Ugaoo Coupons<br />
+            </div>
+            <div class="col-md-3">
+                <b>GET IN TOUCH</b><br />
+                <br />
+                Call : +91-9129-9129-91<br />
+
+                Email : support@ugaoo.com<br />
+            </div>
+        </div>
+    </div>
+    <br />
+    <footer class="border-top footer text-muted">
+        
+        <div class="container">
+            &copy; 2023 - PlantNursery - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
