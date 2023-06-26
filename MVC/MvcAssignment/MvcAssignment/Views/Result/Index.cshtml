@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Index";
+}
+
+@model MvcAssignment.Models.ResultModel
+@using (Html.BeginForm("Index","Result",FormMethod.Post))
+{
+    <h1>Result of student </h1>
+    <br />
+    <br />
+    <b>Enter Subject1 marks :</b>@Html.TextBoxFor(m=>m.m1)
+    <br />
+    <br />
+    <b>Enter Subject2 marks :</b> @Html.TextBoxFor(m=>m.m2)
+    <br />
+    <br />
+    <b>Enter Subject3 marks :</b> @Html.TextBoxFor(m=>m.m3)
+    <br />
+    <br />
+    <b>Enter Subject4 marks :</b>
+
+    @Html.TextBoxFor(m=>m.m4)
+    <br />
+    <br />
+    <b>Enter Subject5 marks :</b>
+
+    @Html.TextBoxFor(m=>m.m5)
+    <br />
+    <br />
+    <input type="submit" value="result" />
+    <br />
+    <br />
+
+}
+<h3>Result of Student</h3>
+Total Marks :@ViewBag.total
+<br />
+Percent :@ViewBag.per
+<br />
+Grade :@ViewBag.grade
+<br />

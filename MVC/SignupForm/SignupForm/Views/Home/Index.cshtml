@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- To create a text box using html helper -->
+
+@using(Html.BeginForm("Index","Home",FormMethod.Post))
+{
+    <!-- using this method will loosely bound the controls for strongly bound other control is used-->
+
+    <b>UserName : </b>@Html.TextBox("Name","Enter name" ,new {style="color:blue"})      
+    
+}
+<br />
+<br />
+
+<!-- using this method the controls html controls will be strongly bound -->
+@model SignupForm.Models.UserModel
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <b>User Name : </b>@Html.TextBoxFor(m=>m.Name,new{@value="Enter Name"})
+}
+
