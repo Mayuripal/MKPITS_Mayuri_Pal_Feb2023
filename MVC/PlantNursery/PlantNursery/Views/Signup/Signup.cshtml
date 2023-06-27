@@ -4,24 +4,30 @@
 @{
     ViewBag.Title = "Signup";
 }
-@model SignupForm.Models.SignupModel
-@using (Html.BeginForm("Signup","Signup",FormMethod.Post))
+
+@model PlantNursery.Models.SignUpModel
+@using (Html.BeginForm("Signup","Signup", FormMethod.Post))
 {
     <h2>SignUp Form</h2>
-    <br /><br />
+    <br />
+    <br />
     <b>Mail : </b> @Html.TextBoxFor(m=>m.Email,new{@Value="Email"})
 
-    <br /><br />
-    <b>Password : </b>@Html.PasswordFor(m=>m.Password,new{@Value="Password"})
+    <br />
+    <br />
+    <b>Password : </b>
 
-    <br /><br />
+    @Html.PasswordFor(m=>m.Password,new{@Value="Password"})
+
+    <br />
+    <br />
     <input type="submit" value="signup" />
 }
 
 
 <hr />
 <h3> signup details :</h3>
-Email is : @ViewBag.Email
+Email is : @ViewBag.email
 <br />
-Password is : @ViewBag.Password
+Password is : @ViewBag.password
 <br />
