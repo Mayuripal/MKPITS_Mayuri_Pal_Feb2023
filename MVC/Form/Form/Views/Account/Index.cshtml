@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Account";
+}
+
+@using Form.Models
+@model BankModel
+
+@using (Html.BeginForm ("Index","Account",FormMethod.Post))
+{
+    <b>Enter Account Number  </b>@Html.TextBoxFor(m=>m.AccountNumber)
+    <br />
+    <br />
+    <b>Enter Amount  </b>@Html.TextBoxFor(m=>m.Amount)
+    <br />
+    <br />
+    <b>Transaction Type  </b>@Html.DropDownListFor(m=>m.GetTranstype,new SelectList(Enum.GetValues(typeof(transtype))),"- select ")
+    <br /><br /><br />
+    <input type="submit" value="Enter" />
+
+}
+
+<hr />
+Transaction Details 
+<br />
+<br />
+Account Number : @ViewBag.AccountNumber
+<br />
+Amount : @ViewBag.BalAmount
+
+<br />
+<hr />

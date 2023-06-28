@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Algorithm";
+}
+@model RadioButton.Models.AlgorithmModel
+@using (Html.BeginForm("Index","Algorithm", FormMethod.Post))
+{
+
+    <b>Want calculation: </b>
+    <br />
+    <span>number 1: </span> @Html.TextBoxFor(m => m.number1)
+    <br />
+    <span>number 2: </span> @Html.TextBoxFor(m => m.number2)
+
+    <br />
+    <span>add: </span> @Html.RadioButtonFor(m=>m.caltype,"add")
+    <span> | substract: </span> @Html.RadioButtonFor(m => m.caltype,"sub")
+    <span> | multiply: </span> @Html.RadioButtonFor(m => m.caltype,"mul")
+    <br />
+    <input type="submit" value="ok" />
+
+}
+<hr />
+<h4>calculation result</h4>
+<b>result : </b>@ViewBag.res
+<br />

@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Product";
+}
+@using Form.Models
+@model ProductDetailsModel
+
+@using (Html.BeginForm("Index","Product",FormMethod.Post))
+{
+    <b>Product Store</b>
+    <br />
+    <br />
+    <span>Enter Order Number  </span>@Html.TextBoxFor(m=>m.OrderNumber)
+    <br />
+    <br />
+    <span>Enter Customer Name  </span>@Html.TextBoxFor(m=>m.CustomerName)
+    <br />
+    <br />
+    <span>Select Product  </span>@Html.DropDownListFor(m=>m.GetProductName,new SelectList(Enum.GetValues(typeof(prodname))),"-select ")
+    <br />
+    <br />
+    <span>Enter Price  </span>@Html.TextBoxFor(m=>m.price)
+    <br />
+    <br>
+    <span>Enter Quantity  </span>@Html.TextBoxFor(m=>m.qty)
+    <br />
+    <br />
+    <input type="submit" value="ok"/>
+    <br />
+    <br />
+
+}
+<hr />
+<b>Order Details</b>
+<br />
+Order Number :@ViewBag.OrderNumber
+<br />
+Customer Name :@ViewBag.Name
+<br />
+Product :@ViewBag.ProductName
+<br />
+Price :@ViewBag.totalprice
+<br />

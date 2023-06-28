@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Shop";
+}
+
+@using Form.Models
+@model ShopModel
+
+@using (Html.BeginForm("Index","Shop",FormMethod.Post))
+{
+    <b>Select Tea Type : </b>
+    @Html.DropDownList("SelectTeaType",new SelectList(Enum.GetValues(typeof(TeaType))),"-select tea ")
+    <input type="submit" value="Order"/>
+}
+
+<h4>You Selected</h4>
+<b>Tea Type: </b>@ViewBag.teatype
