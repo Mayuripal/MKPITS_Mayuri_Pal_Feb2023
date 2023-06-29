@@ -13,24 +13,12 @@ namespace Form.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public new IActionResult Index()
         {
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Index(IFormCollection fc,UserModel um)
-        {
-            if (ModelState.IsValid)
-            {
-                um.UserName = fc["UserName"];
-                return View(um);
-            }
-            else
-            {
-                return View();
-            }
-        }
+        
         public IActionResult Privacy()
         {
             return View();

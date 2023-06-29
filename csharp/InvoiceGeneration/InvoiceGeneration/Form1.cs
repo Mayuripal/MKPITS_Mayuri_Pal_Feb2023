@@ -24,6 +24,7 @@ namespace InvoiceGeneration
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //fill list box with product name
             DataSet ds = Invoice.GetProduct();
             listBox1.DataSource = ds.Tables[0];
             listBox1.DisplayMember = "Name";
@@ -33,6 +34,7 @@ namespace InvoiceGeneration
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //to fill detaild according to selected product
             DataSet ds1 = Invoice.GetProductDetail(listBox1.Text);
             foreach (DataRow dr in ds1.Tables[0].Rows)
             { 
