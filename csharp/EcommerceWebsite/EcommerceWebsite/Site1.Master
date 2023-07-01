@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="EcommerceWebsite.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Ecommerce Site</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            width: 100%;
+        }
+        .auto-style4 {
+            width: 820px;
+            color: #990000;
+        }
+        .auto-style5 {
+            color: #000000;
+        }
+        .auto-style6 {
+            width: 154px;
+            text-align: center;
+        }
+        .auto-style10 {
+            width: 146px;
+            text-align: center;
+        }
+        .auto-style11 {
+            width: 130px;
+            text-align: center;
+        }
+        .auto-style12 {
+            width: 127px;
+            text-align: center;
+        }
+        .auto-style13 {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style3">
+                <tr>
+                    <td class="auto-style4"><h1 class="auto-style13">Friend&#39;s Corner</h1>
+                    </td>
+                    <td class="auto-style6">
+                        <strong>
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style5" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                        </strong>
+                    </td>
+                    <td class="auto-style10">
+                        <strong>
+                        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style5" NavigateUrl="~/About.aspx">About</asp:HyperLink>
+                        </strong>
+                    </td>
+                    <td class="auto-style11">
+                        <strong>
+                        <asp:HyperLink ID="HyperLink3" runat="server" CssClass="auto-style5" NavigateUrl="~/Specials.aspx">Specials</asp:HyperLink>
+                        </strong>
+                    </td>
+                    <td class="auto-style12">
+                        <strong>
+                        <asp:HyperLink ID="HyperLink4" runat="server" CssClass="auto-style5" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+&nbsp;&nbsp; </strong> </td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+&nbsp;<div class="navbar" >
+               
+           </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <p>
+        @Friend&#39;sCornerCafe</p>
+</body>
+</html>

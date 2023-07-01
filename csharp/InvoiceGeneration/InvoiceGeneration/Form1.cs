@@ -55,7 +55,7 @@ namespace InvoiceGeneration
         }
 
         public void calculate()
-        {
+        {   //calculate gst and total amount
             double cgstamount = Convert.ToDouble(textBox4.Text) * Convert.ToDouble(textBox7.Text) / 100;
             textBox9.Text = cgstamount.ToString();
 
@@ -69,6 +69,7 @@ namespace InvoiceGeneration
 
         private void textBox13_KeyPress(object sender, KeyPressEventArgs e)
         {
+
             if(!char.IsDigit(e.KeyChar)&& !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
@@ -140,6 +141,11 @@ namespace InvoiceGeneration
             textBox13.Clear();
             
             textBox16.Clear();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
