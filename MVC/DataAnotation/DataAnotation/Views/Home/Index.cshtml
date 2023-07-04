@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+@model DataAnotation.Models.StudentModel
+<h2 style="color:chartreuse">Registration</h2>
+@using (Html.BeginForm("StudentDetail","Home",FormMethod.Post))
+{
+    <ol>
+        <li>
+            @Html.LabelFor(m=>m.Name)
+            @Html.TextBoxFor(m=>m.Name)
+            @Html.ValidationMessageFor(m=>m.Name,"",new{@class="text-danger"}) 
+        </li>
+        <li>
+            @Html.LabelFor(m=>m.Email)
+            @Html.TextBoxFor(m=>m.Email)
+            @Html.ValidationMessageFor(m=>m.Email,"",new{@class="text-danger"})  
+        </li> 
+        <li>
+            @Html.LabelFor(m=>m.ConfirmEmail)
+            @Html.TextBoxFor(m=>m.ConfirmEmail)
+            @Html.ValidationMessageFor(m=>m.ConfirmEmail,"",new{@class="text-danger"})
+        </li>
+        <li>
+            @Html.LabelFor(m=>m.Age)
+            @Html.TextBoxFor(m=>m.Age)
+            @Html.ValidationMessageFor(m=>m.Age,"",new{@class="text-danger"})
+        </li>
+    </ol>
+    @Html.ValidationSummary(false, "", new { @class = "alert-danger"})
+
+    <input type="submit" value="Save Student Details" />
+}
+<hr />
+<h2 style="color:chartreuse">Details</h2>
+<br />
+<b>Name :</b> @ViewBag.Name<br />
+<b>Email :</b> @ViewBag.Email<br />
+<b>Age :</b> @ViewBag.Age
+
