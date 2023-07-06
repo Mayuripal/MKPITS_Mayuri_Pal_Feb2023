@@ -40,12 +40,22 @@ namespace StudentMvc.Controllers
         }
 
         // ********* Update Student detail ***********
-        //[HttpGet]
-        //public ActionResult Edit(int Rollno)
-        //{
-        //    StudentDbHandler dbHandler = new StudentDbHandler();
-        //    return View(dbHandler.GetRecords.Find(studModel => studModel.Rollno == Rollno));
-        //}
-       
+        [HttpGet]
+        public ActionResult Edit(int Rollno)
+        {
+            StudentDbHandler dbHandler = new StudentDbHandler();
+            return View(dbHandler.GetRecords().Find(studModel => studModel.Rollno == Rollno));
+        }
+        [HttpPost]
+        public ActionResult Edit(int Rollno, StudentModel sdetail)
+        {
+            try
+            {
+                StudentDbHandler dbHandler = new StudentDbHandler();
+                dbHandler.UpdateRecord(sdetail);
+                return RedirectToAction("Index");
+            }
+            catch {  return View(); }
+        }
     }
 }
