@@ -1,6 +1,6 @@
 ﻿namespace InvoiceGeneration
 {
-    partial class Form1
+    partial class InvoiceForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,528 +29,528 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.groupBoxEMIDetails = new System.Windows.Forms.GroupBox();
+            this.dataGridViewEMIDetail = new System.Windows.Forms.DataGridView();
+            this.groupBoxPayment = new System.Windows.Forms.GroupBox();
+            this.textBoxSoldPersonId = new System.Windows.Forms.TextBox();
+            this.textBoxNetAmount = new System.Windows.Forms.TextBox();
+            this.labelSoldPersonId = new System.Windows.Forms.Label();
+            this.labelNetAmount = new System.Windows.Forms.Label();
+            this.radioButtonEMI = new System.Windows.Forms.RadioButton();
+            this.radioButtonCash = new System.Windows.Forms.RadioButton();
+            this.groupBoxCustomerDetail = new System.Windows.Forms.GroupBox();
+            this.textBoxPaidAmount = new System.Windows.Forms.TextBox();
+            this.textBoxMobileNo = new System.Windows.Forms.TextBox();
+            this.radioButtonOther = new System.Windows.Forms.RadioButton();
+            this.radioButtonFemale = new System.Windows.Forms.RadioButton();
+            this.radioButtonMale = new System.Windows.Forms.RadioButton();
+            this.textBoxLastName = new System.Windows.Forms.TextBox();
+            this.textBoxFirstName = new System.Windows.Forms.TextBox();
+            this.labelPaidAmount = new System.Windows.Forms.Label();
+            this.labelMobileNo = new System.Windows.Forms.Label();
+            this.labelGender = new System.Windows.Forms.Label();
+            this.labelLastName = new System.Windows.Forms.Label();
+            this.labelFirstName = new System.Windows.Forms.Label();
+            this.groupBoxInvoiceTable = new System.Windows.Forms.GroupBox();
+            this.textBoxSgstAmount = new System.Windows.Forms.TextBox();
+            this.textBoxCGSTAmount = new System.Windows.Forms.TextBox();
+            this.textBoxPercentSGST = new System.Windows.Forms.TextBox();
+            this.textBoxPercentCGST = new System.Windows.Forms.TextBox();
+            this.textBoxTotalPrice = new System.Windows.Forms.TextBox();
+            this.textBoxQuantityRequired = new System.Windows.Forms.TextBox();
+            this.dateTimePickerInvoiceDate = new System.Windows.Forms.DateTimePicker();
+            this.labelSGSTAmount = new System.Windows.Forms.Label();
+            this.labelCGSTAmount = new System.Windows.Forms.Label();
+            this.labelTotalPrice = new System.Windows.Forms.Label();
+            this.labelQuantityRequired = new System.Windows.Forms.Label();
+            this.labelInvoiceDate = new System.Windows.Forms.Label();
+            this.groupBoxProductDetail = new System.Windows.Forms.GroupBox();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
+            this.textBoxTotalQuantity = new System.Windows.Forms.TextBox();
+            this.textBoxAvailableQuantity = new System.Windows.Forms.TextBox();
+            this.textBoxProductName = new System.Windows.Forms.TextBox();
+            this.labelPrice = new System.Windows.Forms.Label();
+            this.labelTotalQuantity = new System.Windows.Forms.Label();
+            this.labelAvailableQuantity = new System.Windows.Forms.Label();
+            this.labelProductName = new System.Windows.Forms.Label();
+            this.groupBoxProductName = new System.Windows.Forms.GroupBox();
+            this.listBoxProductName = new System.Windows.Forms.ListBox();
             this.ButtonSave = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ButtonReset = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxEMIDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEMIDetail)).BeginInit();
+            this.groupBoxPayment.SuspendLayout();
+            this.groupBoxCustomerDetail.SuspendLayout();
+            this.groupBoxInvoiceTable.SuspendLayout();
+            this.groupBoxProductDetail.SuspendLayout();
+            this.groupBoxProductName.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.groupBox5);
-            this.panel1.Controls.Add(this.groupBox6);
-            this.panel1.Controls.Add(this.groupBox4);
-            this.panel1.Controls.Add(this.groupBox3);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.groupBoxEMIDetails);
+            this.panel1.Controls.Add(this.groupBoxPayment);
+            this.panel1.Controls.Add(this.groupBoxCustomerDetail);
+            this.panel1.Controls.Add(this.groupBoxInvoiceTable);
+            this.panel1.Controls.Add(this.groupBoxProductDetail);
+            this.panel1.Controls.Add(this.groupBoxProductName);
             this.panel1.Location = new System.Drawing.Point(13, 13);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(788, 711);
-            this.panel1.TabIndex = 0;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.dataGridView1);
-            this.groupBox5.Location = new System.Drawing.Point(23, 472);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(349, 216);
-            this.groupBox5.TabIndex = 0;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "EMI Detail";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 40);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(349, 170);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.textBox16);
-            this.groupBox6.Controls.Add(this.textBox15);
-            this.groupBox6.Controls.Add(this.label16);
-            this.groupBox6.Controls.Add(this.label15);
-            this.groupBox6.Controls.Add(this.radioButton5);
-            this.groupBox6.Controls.Add(this.radioButton4);
-            this.groupBox6.Location = new System.Drawing.Point(394, 472);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(366, 216);
-            this.groupBox6.TabIndex = 0;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Payment Mode";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(189, 162);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(151, 26);
-            this.textBox16.TabIndex = 5;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(189, 104);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(152, 26);
-            this.textBox15.TabIndex = 4;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(21, 165);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(116, 20);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "Sold Person ID";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(21, 107);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(94, 20);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Net Amount";
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(189, 52);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(63, 24);
-            this.radioButton5.TabIndex = 1;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "EMI";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(38, 52);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(71, 24);
-            this.radioButton4.TabIndex = 0;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Cash";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.textBox14);
-            this.groupBox4.Controls.Add(this.textBox13);
-            this.groupBox4.Controls.Add(this.radioButton3);
-            this.groupBox4.Controls.Add(this.radioButton2);
-            this.groupBox4.Controls.Add(this.radioButton1);
-            this.groupBox4.Controls.Add(this.textBox12);
-            this.groupBox4.Controls.Add(this.textBox11);
-            this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Location = new System.Drawing.Point(23, 238);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(349, 228);
-            this.groupBox4.TabIndex = 0;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Customer Detail";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(178, 179);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(150, 26);
-            this.textBox14.TabIndex = 11;
-            this.textBox14.Leave += new System.EventHandler(this.textBox14_Leave);
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(178, 143);
-            this.textBox13.MaxLength = 10;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(150, 26);
-            this.textBox13.TabIndex = 10;
-            this.textBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox13_KeyPress);
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(271, 109);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(74, 24);
-            this.radioButton3.TabIndex = 9;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Other";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(178, 109);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(87, 24);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(104, 109);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(68, 24);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(178, 68);
-            this.textBox12.MaxLength = 50;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(150, 26);
-            this.textBox12.TabIndex = 6;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(178, 33);
-            this.textBox11.MaxLength = 50;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(150, 26);
-            this.textBox11.TabIndex = 5;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(20, 186);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 20);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Paid Amount";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(20, 149);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(83, 20);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Mobile No.";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(20, 109);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 20);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Gender";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(20, 72);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(86, 20);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Last Name";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(20, 36);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 20);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "First Name";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.textBox10);
-            this.groupBox3.Controls.Add(this.textBox9);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Controls.Add(this.textBox7);
-            this.groupBox3.Controls.Add(this.textBox6);
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.dateTimePicker1);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Location = new System.Drawing.Point(394, 238);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(363, 228);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Invoice Table";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(243, 175);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(94, 26);
-            this.textBox10.TabIndex = 11;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(242, 142);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(95, 26);
-            this.textBox9.TabIndex = 10;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(185, 175);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(51, 26);
-            this.textBox8.TabIndex = 9;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(185, 142);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(51, 26);
-            this.textBox7.TabIndex = 8;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(185, 102);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(152, 26);
-            this.textBox6.TabIndex = 7;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(185, 68);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(152, 26);
-            this.textBox5.TabIndex = 6;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(185, 31);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(152, 26);
-            this.dateTimePicker1.TabIndex = 5;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(11, 186);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 20);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "SGST & Amount";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(11, 149);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(117, 20);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "CGST & Amount";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 109);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 20);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Total Price";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 72);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 20);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Quantity Required";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 36);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 20);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Invoice Date";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(394, 25);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(362, 207);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Product Detail";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(184, 158);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(137, 26);
-            this.textBox4.TabIndex = 7;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(184, 118);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(137, 26);
-            this.textBox3.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(184, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(137, 26);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(184, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(137, 26);
-            this.textBox1.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 161);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Price";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Total Quantity";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Available Quantity";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Product Name";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.listBox1);
-            this.groupBox1.Location = new System.Drawing.Point(23, 25);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(349, 207);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Product Name";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(24, 31);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(304, 144);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.panel1.TabIndex = 1;
+            // 
+            // groupBoxEMIDetails
+            // 
+            this.groupBoxEMIDetails.Controls.Add(this.dataGridViewEMIDetail);
+            this.groupBoxEMIDetails.Location = new System.Drawing.Point(23, 472);
+            this.groupBoxEMIDetails.Name = "groupBoxEMIDetails";
+            this.groupBoxEMIDetails.Size = new System.Drawing.Size(349, 216);
+            this.groupBoxEMIDetails.TabIndex = 0;
+            this.groupBoxEMIDetails.TabStop = false;
+            this.groupBoxEMIDetails.Text = "EMI Detail";
+            // 
+            // dataGridViewEMIDetail
+            // 
+            this.dataGridViewEMIDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEMIDetail.Location = new System.Drawing.Point(0, 40);
+            this.dataGridViewEMIDetail.Name = "dataGridViewEMIDetail";
+            this.dataGridViewEMIDetail.RowHeadersWidth = 62;
+            this.dataGridViewEMIDetail.RowTemplate.Height = 28;
+            this.dataGridViewEMIDetail.Size = new System.Drawing.Size(349, 170);
+            this.dataGridViewEMIDetail.TabIndex = 0;
+            // 
+            // groupBoxPayment
+            // 
+            this.groupBoxPayment.Controls.Add(this.textBoxSoldPersonId);
+            this.groupBoxPayment.Controls.Add(this.textBoxNetAmount);
+            this.groupBoxPayment.Controls.Add(this.labelSoldPersonId);
+            this.groupBoxPayment.Controls.Add(this.labelNetAmount);
+            this.groupBoxPayment.Controls.Add(this.radioButtonEMI);
+            this.groupBoxPayment.Controls.Add(this.radioButtonCash);
+            this.groupBoxPayment.Location = new System.Drawing.Point(394, 472);
+            this.groupBoxPayment.Name = "groupBoxPayment";
+            this.groupBoxPayment.Size = new System.Drawing.Size(366, 216);
+            this.groupBoxPayment.TabIndex = 5;
+            this.groupBoxPayment.TabStop = false;
+            this.groupBoxPayment.Text = "Payment Mode";
+            // 
+            // textBoxSoldPersonId
+            // 
+            this.textBoxSoldPersonId.Location = new System.Drawing.Point(189, 162);
+            this.textBoxSoldPersonId.Name = "textBoxSoldPersonId";
+            this.textBoxSoldPersonId.Size = new System.Drawing.Size(151, 26);
+            this.textBoxSoldPersonId.TabIndex = 5;
+            // 
+            // textBoxNetAmount
+            // 
+            this.textBoxNetAmount.Location = new System.Drawing.Point(189, 104);
+            this.textBoxNetAmount.Name = "textBoxNetAmount";
+            this.textBoxNetAmount.ReadOnly = true;
+            this.textBoxNetAmount.Size = new System.Drawing.Size(152, 26);
+            this.textBoxNetAmount.TabIndex = 3;
+            // 
+            // labelSoldPersonId
+            // 
+            this.labelSoldPersonId.AutoSize = true;
+            this.labelSoldPersonId.Location = new System.Drawing.Point(21, 165);
+            this.labelSoldPersonId.Name = "labelSoldPersonId";
+            this.labelSoldPersonId.Size = new System.Drawing.Size(116, 20);
+            this.labelSoldPersonId.TabIndex = 4;
+            this.labelSoldPersonId.Text = "Sold Person ID";
+            // 
+            // labelNetAmount
+            // 
+            this.labelNetAmount.AutoSize = true;
+            this.labelNetAmount.Location = new System.Drawing.Point(21, 107);
+            this.labelNetAmount.Name = "labelNetAmount";
+            this.labelNetAmount.Size = new System.Drawing.Size(94, 20);
+            this.labelNetAmount.TabIndex = 2;
+            this.labelNetAmount.Text = "Net Amount";
+            // 
+            // radioButtonEMI
+            // 
+            this.radioButtonEMI.AutoSize = true;
+            this.radioButtonEMI.Location = new System.Drawing.Point(189, 52);
+            this.radioButtonEMI.Name = "radioButtonEMI";
+            this.radioButtonEMI.Size = new System.Drawing.Size(63, 24);
+            this.radioButtonEMI.TabIndex = 1;
+            this.radioButtonEMI.TabStop = true;
+            this.radioButtonEMI.Text = "EMI";
+            this.radioButtonEMI.UseVisualStyleBackColor = true;
+            this.radioButtonEMI.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            // 
+            // radioButtonCash
+            // 
+            this.radioButtonCash.AutoSize = true;
+            this.radioButtonCash.Location = new System.Drawing.Point(38, 52);
+            this.radioButtonCash.Name = "radioButtonCash";
+            this.radioButtonCash.Size = new System.Drawing.Size(71, 24);
+            this.radioButtonCash.TabIndex = 0;
+            this.radioButtonCash.TabStop = true;
+            this.radioButtonCash.Text = "Cash";
+            this.radioButtonCash.UseVisualStyleBackColor = true;
+            this.radioButtonCash.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            // 
+            // groupBoxCustomerDetail
+            // 
+            this.groupBoxCustomerDetail.Controls.Add(this.textBoxPaidAmount);
+            this.groupBoxCustomerDetail.Controls.Add(this.textBoxMobileNo);
+            this.groupBoxCustomerDetail.Controls.Add(this.radioButtonOther);
+            this.groupBoxCustomerDetail.Controls.Add(this.radioButtonFemale);
+            this.groupBoxCustomerDetail.Controls.Add(this.radioButtonMale);
+            this.groupBoxCustomerDetail.Controls.Add(this.textBoxLastName);
+            this.groupBoxCustomerDetail.Controls.Add(this.textBoxFirstName);
+            this.groupBoxCustomerDetail.Controls.Add(this.labelPaidAmount);
+            this.groupBoxCustomerDetail.Controls.Add(this.labelMobileNo);
+            this.groupBoxCustomerDetail.Controls.Add(this.labelGender);
+            this.groupBoxCustomerDetail.Controls.Add(this.labelLastName);
+            this.groupBoxCustomerDetail.Controls.Add(this.labelFirstName);
+            this.groupBoxCustomerDetail.Location = new System.Drawing.Point(23, 238);
+            this.groupBoxCustomerDetail.Name = "groupBoxCustomerDetail";
+            this.groupBoxCustomerDetail.Size = new System.Drawing.Size(349, 228);
+            this.groupBoxCustomerDetail.TabIndex = 3;
+            this.groupBoxCustomerDetail.TabStop = false;
+            this.groupBoxCustomerDetail.Text = "Customer Detail";
+            // 
+            // textBoxPaidAmount
+            // 
+            this.textBoxPaidAmount.Location = new System.Drawing.Point(178, 179);
+            this.textBoxPaidAmount.Name = "textBoxPaidAmount";
+            this.textBoxPaidAmount.Size = new System.Drawing.Size(150, 26);
+            this.textBoxPaidAmount.TabIndex = 11;
+            this.textBoxPaidAmount.Leave += new System.EventHandler(this.textBox14_Leave);
+            // 
+            // textBoxMobileNo
+            // 
+            this.textBoxMobileNo.Location = new System.Drawing.Point(178, 143);
+            this.textBoxMobileNo.MaxLength = 10;
+            this.textBoxMobileNo.Name = "textBoxMobileNo";
+            this.textBoxMobileNo.Size = new System.Drawing.Size(150, 26);
+            this.textBoxMobileNo.TabIndex = 9;
+            this.textBoxMobileNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox13_KeyPress);
+            // 
+            // radioButtonOther
+            // 
+            this.radioButtonOther.AutoSize = true;
+            this.radioButtonOther.Location = new System.Drawing.Point(271, 109);
+            this.radioButtonOther.Name = "radioButtonOther";
+            this.radioButtonOther.Size = new System.Drawing.Size(74, 24);
+            this.radioButtonOther.TabIndex = 7;
+            this.radioButtonOther.TabStop = true;
+            this.radioButtonOther.Text = "Other";
+            this.radioButtonOther.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonFemale
+            // 
+            this.radioButtonFemale.AutoSize = true;
+            this.radioButtonFemale.Location = new System.Drawing.Point(178, 109);
+            this.radioButtonFemale.Name = "radioButtonFemale";
+            this.radioButtonFemale.Size = new System.Drawing.Size(87, 24);
+            this.radioButtonFemale.TabIndex = 6;
+            this.radioButtonFemale.TabStop = true;
+            this.radioButtonFemale.Text = "Female";
+            this.radioButtonFemale.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonMale
+            // 
+            this.radioButtonMale.AutoSize = true;
+            this.radioButtonMale.Location = new System.Drawing.Point(104, 109);
+            this.radioButtonMale.Name = "radioButtonMale";
+            this.radioButtonMale.Size = new System.Drawing.Size(68, 24);
+            this.radioButtonMale.TabIndex = 5;
+            this.radioButtonMale.TabStop = true;
+            this.radioButtonMale.Text = "Male";
+            this.radioButtonMale.UseVisualStyleBackColor = true;
+            // 
+            // textBoxLastName
+            // 
+            this.textBoxLastName.Location = new System.Drawing.Point(178, 68);
+            this.textBoxLastName.MaxLength = 50;
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Size = new System.Drawing.Size(150, 26);
+            this.textBoxLastName.TabIndex = 3;
+            // 
+            // textBoxFirstName
+            // 
+            this.textBoxFirstName.Location = new System.Drawing.Point(178, 33);
+            this.textBoxFirstName.MaxLength = 50;
+            this.textBoxFirstName.Name = "textBoxFirstName";
+            this.textBoxFirstName.Size = new System.Drawing.Size(150, 26);
+            this.textBoxFirstName.TabIndex = 1;
+            // 
+            // labelPaidAmount
+            // 
+            this.labelPaidAmount.AutoSize = true;
+            this.labelPaidAmount.Location = new System.Drawing.Point(20, 186);
+            this.labelPaidAmount.Name = "labelPaidAmount";
+            this.labelPaidAmount.Size = new System.Drawing.Size(100, 20);
+            this.labelPaidAmount.TabIndex = 10;
+            this.labelPaidAmount.Text = "Paid Amount";
+            // 
+            // labelMobileNo
+            // 
+            this.labelMobileNo.AutoSize = true;
+            this.labelMobileNo.Location = new System.Drawing.Point(20, 149);
+            this.labelMobileNo.Name = "labelMobileNo";
+            this.labelMobileNo.Size = new System.Drawing.Size(83, 20);
+            this.labelMobileNo.TabIndex = 8;
+            this.labelMobileNo.Text = "Mobile No.";
+            // 
+            // labelGender
+            // 
+            this.labelGender.AutoSize = true;
+            this.labelGender.Location = new System.Drawing.Point(20, 109);
+            this.labelGender.Name = "labelGender";
+            this.labelGender.Size = new System.Drawing.Size(63, 20);
+            this.labelGender.TabIndex = 4;
+            this.labelGender.Text = "Gender";
+            // 
+            // labelLastName
+            // 
+            this.labelLastName.AutoSize = true;
+            this.labelLastName.Location = new System.Drawing.Point(20, 72);
+            this.labelLastName.Name = "labelLastName";
+            this.labelLastName.Size = new System.Drawing.Size(86, 20);
+            this.labelLastName.TabIndex = 2;
+            this.labelLastName.Text = "Last Name";
+            // 
+            // labelFirstName
+            // 
+            this.labelFirstName.AutoSize = true;
+            this.labelFirstName.Location = new System.Drawing.Point(20, 36);
+            this.labelFirstName.Name = "labelFirstName";
+            this.labelFirstName.Size = new System.Drawing.Size(86, 20);
+            this.labelFirstName.TabIndex = 0;
+            this.labelFirstName.Text = "First Name";
+            // 
+            // groupBoxInvoiceTable
+            // 
+            this.groupBoxInvoiceTable.Controls.Add(this.textBoxSgstAmount);
+            this.groupBoxInvoiceTable.Controls.Add(this.textBoxCGSTAmount);
+            this.groupBoxInvoiceTable.Controls.Add(this.textBoxPercentSGST);
+            this.groupBoxInvoiceTable.Controls.Add(this.textBoxPercentCGST);
+            this.groupBoxInvoiceTable.Controls.Add(this.textBoxTotalPrice);
+            this.groupBoxInvoiceTable.Controls.Add(this.textBoxQuantityRequired);
+            this.groupBoxInvoiceTable.Controls.Add(this.dateTimePickerInvoiceDate);
+            this.groupBoxInvoiceTable.Controls.Add(this.labelSGSTAmount);
+            this.groupBoxInvoiceTable.Controls.Add(this.labelCGSTAmount);
+            this.groupBoxInvoiceTable.Controls.Add(this.labelTotalPrice);
+            this.groupBoxInvoiceTable.Controls.Add(this.labelQuantityRequired);
+            this.groupBoxInvoiceTable.Controls.Add(this.labelInvoiceDate);
+            this.groupBoxInvoiceTable.Location = new System.Drawing.Point(394, 238);
+            this.groupBoxInvoiceTable.Name = "groupBoxInvoiceTable";
+            this.groupBoxInvoiceTable.Size = new System.Drawing.Size(363, 228);
+            this.groupBoxInvoiceTable.TabIndex = 4;
+            this.groupBoxInvoiceTable.TabStop = false;
+            this.groupBoxInvoiceTable.Text = "Invoice Table";
+            // 
+            // textBoxSgstAmount
+            // 
+            this.textBoxSgstAmount.Location = new System.Drawing.Point(243, 175);
+            this.textBoxSgstAmount.Name = "textBoxSgstAmount";
+            this.textBoxSgstAmount.ReadOnly = true;
+            this.textBoxSgstAmount.Size = new System.Drawing.Size(94, 26);
+            this.textBoxSgstAmount.TabIndex = 11;
+            // 
+            // textBoxCGSTAmount
+            // 
+            this.textBoxCGSTAmount.Location = new System.Drawing.Point(242, 142);
+            this.textBoxCGSTAmount.Name = "textBoxCGSTAmount";
+            this.textBoxCGSTAmount.ReadOnly = true;
+            this.textBoxCGSTAmount.Size = new System.Drawing.Size(95, 26);
+            this.textBoxCGSTAmount.TabIndex = 8;
+            // 
+            // textBoxPercentSGST
+            // 
+            this.textBoxPercentSGST.Location = new System.Drawing.Point(185, 175);
+            this.textBoxPercentSGST.Name = "textBoxPercentSGST";
+            this.textBoxPercentSGST.ReadOnly = true;
+            this.textBoxPercentSGST.Size = new System.Drawing.Size(51, 26);
+            this.textBoxPercentSGST.TabIndex = 10;
+            // 
+            // textBoxPercentCGST
+            // 
+            this.textBoxPercentCGST.Location = new System.Drawing.Point(185, 142);
+            this.textBoxPercentCGST.Name = "textBoxPercentCGST";
+            this.textBoxPercentCGST.ReadOnly = true;
+            this.textBoxPercentCGST.Size = new System.Drawing.Size(51, 26);
+            this.textBoxPercentCGST.TabIndex = 7;
+            // 
+            // textBoxTotalPrice
+            // 
+            this.textBoxTotalPrice.Location = new System.Drawing.Point(185, 102);
+            this.textBoxTotalPrice.Name = "textBoxTotalPrice";
+            this.textBoxTotalPrice.ReadOnly = true;
+            this.textBoxTotalPrice.Size = new System.Drawing.Size(152, 26);
+            this.textBoxTotalPrice.TabIndex = 5;
+            // 
+            // textBoxQuantityRequired
+            // 
+            this.textBoxQuantityRequired.Location = new System.Drawing.Point(185, 68);
+            this.textBoxQuantityRequired.Name = "textBoxQuantityRequired";
+            this.textBoxQuantityRequired.Size = new System.Drawing.Size(152, 26);
+            this.textBoxQuantityRequired.TabIndex = 3;
+            //this.textBoxQuantityRequired.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // dateTimePickerInvoiceDate
+            // 
+            this.dateTimePickerInvoiceDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerInvoiceDate.Location = new System.Drawing.Point(185, 31);
+            this.dateTimePickerInvoiceDate.Name = "dateTimePickerInvoiceDate";
+            this.dateTimePickerInvoiceDate.Size = new System.Drawing.Size(152, 26);
+            this.dateTimePickerInvoiceDate.TabIndex = 1;
+            // 
+            // labelSGSTAmount
+            // 
+            this.labelSGSTAmount.AutoSize = true;
+            this.labelSGSTAmount.Location = new System.Drawing.Point(11, 186);
+            this.labelSGSTAmount.Name = "labelSGSTAmount";
+            this.labelSGSTAmount.Size = new System.Drawing.Size(117, 20);
+            this.labelSGSTAmount.TabIndex = 9;
+            this.labelSGSTAmount.Text = "SGST & Amount";
+            // 
+            // labelCGSTAmount
+            // 
+            this.labelCGSTAmount.AutoSize = true;
+            this.labelCGSTAmount.Location = new System.Drawing.Point(11, 149);
+            this.labelCGSTAmount.Name = "labelCGSTAmount";
+            this.labelCGSTAmount.Size = new System.Drawing.Size(117, 20);
+            this.labelCGSTAmount.TabIndex = 6;
+            this.labelCGSTAmount.Text = "CGST & Amount";
+            // 
+            // labelTotalPrice
+            // 
+            this.labelTotalPrice.AutoSize = true;
+            this.labelTotalPrice.Location = new System.Drawing.Point(11, 109);
+            this.labelTotalPrice.Name = "labelTotalPrice";
+            this.labelTotalPrice.Size = new System.Drawing.Size(83, 20);
+            this.labelTotalPrice.TabIndex = 4;
+            this.labelTotalPrice.Text = "Total Price";
+            // 
+            // labelQuantityRequired
+            // 
+            this.labelQuantityRequired.AutoSize = true;
+            this.labelQuantityRequired.Location = new System.Drawing.Point(11, 72);
+            this.labelQuantityRequired.Name = "labelQuantityRequired";
+            this.labelQuantityRequired.Size = new System.Drawing.Size(137, 20);
+            this.labelQuantityRequired.TabIndex = 2;
+            this.labelQuantityRequired.Text = "Quantity Required";
+            // 
+            // labelInvoiceDate
+            // 
+            this.labelInvoiceDate.AutoSize = true;
+            this.labelInvoiceDate.Location = new System.Drawing.Point(11, 36);
+            this.labelInvoiceDate.Name = "labelInvoiceDate";
+            this.labelInvoiceDate.Size = new System.Drawing.Size(98, 20);
+            this.labelInvoiceDate.TabIndex = 0;
+            this.labelInvoiceDate.Text = "Invoice Date";
+            // 
+            // groupBoxProductDetail
+            // 
+            this.groupBoxProductDetail.Controls.Add(this.textBoxPrice);
+            this.groupBoxProductDetail.Controls.Add(this.textBoxTotalQuantity);
+            this.groupBoxProductDetail.Controls.Add(this.textBoxAvailableQuantity);
+            this.groupBoxProductDetail.Controls.Add(this.textBoxProductName);
+            this.groupBoxProductDetail.Controls.Add(this.labelPrice);
+            this.groupBoxProductDetail.Controls.Add(this.labelTotalQuantity);
+            this.groupBoxProductDetail.Controls.Add(this.labelAvailableQuantity);
+            this.groupBoxProductDetail.Controls.Add(this.labelProductName);
+            this.groupBoxProductDetail.Location = new System.Drawing.Point(394, 25);
+            this.groupBoxProductDetail.Name = "groupBoxProductDetail";
+            this.groupBoxProductDetail.Size = new System.Drawing.Size(362, 207);
+            this.groupBoxProductDetail.TabIndex = 2;
+            this.groupBoxProductDetail.TabStop = false;
+            this.groupBoxProductDetail.Text = "Product Detail";
+            // 
+            // textBoxPrice
+            // 
+            this.textBoxPrice.Location = new System.Drawing.Point(184, 158);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.ReadOnly = true;
+            this.textBoxPrice.Size = new System.Drawing.Size(137, 26);
+            this.textBoxPrice.TabIndex = 7;
+            // 
+            // textBoxTotalQuantity
+            // 
+            this.textBoxTotalQuantity.Location = new System.Drawing.Point(184, 118);
+            this.textBoxTotalQuantity.Name = "textBoxTotalQuantity";
+            this.textBoxTotalQuantity.ReadOnly = true;
+            this.textBoxTotalQuantity.Size = new System.Drawing.Size(137, 26);
+            this.textBoxTotalQuantity.TabIndex = 5;
+            // 
+            // textBoxAvailableQuantity
+            // 
+            this.textBoxAvailableQuantity.Location = new System.Drawing.Point(184, 78);
+            this.textBoxAvailableQuantity.Name = "textBoxAvailableQuantity";
+            this.textBoxAvailableQuantity.ReadOnly = true;
+            this.textBoxAvailableQuantity.Size = new System.Drawing.Size(137, 26);
+            this.textBoxAvailableQuantity.TabIndex = 3;
+            // 
+            // textBoxProductName
+            // 
+            this.textBoxProductName.Location = new System.Drawing.Point(184, 31);
+            this.textBoxProductName.Name = "textBoxProductName";
+            this.textBoxProductName.ReadOnly = true;
+            this.textBoxProductName.Size = new System.Drawing.Size(137, 26);
+            this.textBoxProductName.TabIndex = 1;
+            // 
+            // labelPrice
+            // 
+            this.labelPrice.AutoSize = true;
+            this.labelPrice.Location = new System.Drawing.Point(10, 161);
+            this.labelPrice.Name = "labelPrice";
+            this.labelPrice.Size = new System.Drawing.Size(44, 20);
+            this.labelPrice.TabIndex = 6;
+            this.labelPrice.Text = "Price";
+            // 
+            // labelTotalQuantity
+            // 
+            this.labelTotalQuantity.AutoSize = true;
+            this.labelTotalQuantity.Location = new System.Drawing.Point(10, 124);
+            this.labelTotalQuantity.Name = "labelTotalQuantity";
+            this.labelTotalQuantity.Size = new System.Drawing.Size(107, 20);
+            this.labelTotalQuantity.TabIndex = 4;
+            this.labelTotalQuantity.Text = "Total Quantity";
+            // 
+            // labelAvailableQuantity
+            // 
+            this.labelAvailableQuantity.AutoSize = true;
+            this.labelAvailableQuantity.Location = new System.Drawing.Point(10, 78);
+            this.labelAvailableQuantity.Name = "labelAvailableQuantity";
+            this.labelAvailableQuantity.Size = new System.Drawing.Size(135, 20);
+            this.labelAvailableQuantity.TabIndex = 2;
+            this.labelAvailableQuantity.Text = "Available Quantity";
+            // 
+            // labelProductName
+            // 
+            this.labelProductName.AutoSize = true;
+            this.labelProductName.Location = new System.Drawing.Point(10, 31);
+            this.labelProductName.Name = "labelProductName";
+            this.labelProductName.Size = new System.Drawing.Size(110, 20);
+            this.labelProductName.TabIndex = 0;
+            this.labelProductName.Text = "Product Name";
+            // 
+            // groupBoxProductName
+            // 
+            this.groupBoxProductName.Controls.Add(this.listBoxProductName);
+            this.groupBoxProductName.Location = new System.Drawing.Point(23, 25);
+            this.groupBoxProductName.Name = "groupBoxProductName";
+            this.groupBoxProductName.Size = new System.Drawing.Size(349, 207);
+            this.groupBoxProductName.TabIndex = 1;
+            this.groupBoxProductName.TabStop = false;
+            this.groupBoxProductName.Text = "Product Name";
+            // 
+            // listBoxProductName
+            // 
+            this.listBoxProductName.FormattingEnabled = true;
+            this.listBoxProductName.ItemHeight = 20;
+            this.listBoxProductName.Location = new System.Drawing.Point(24, 31);
+            this.listBoxProductName.Name = "listBoxProductName";
+            this.listBoxProductName.Size = new System.Drawing.Size(304, 144);
+            this.listBoxProductName.TabIndex = 0;
+            //this.listBoxProductName.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // ButtonSave
             // 
@@ -562,41 +562,41 @@
             this.ButtonSave.UseVisualStyleBackColor = true;
             this.ButtonSave.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // ButtonReset
             // 
-            this.button2.Location = new System.Drawing.Point(598, 742);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 44);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ButtonReset.Location = new System.Drawing.Point(598, 742);
+            this.ButtonReset.Name = "ButtonReset";
+            this.ButtonReset.Size = new System.Drawing.Size(109, 44);
+            this.ButtonReset.TabIndex = 2;
+            this.ButtonReset.Text = "Reset";
+            this.ButtonReset.UseVisualStyleBackColor = true;
+            this.ButtonReset.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // InvoiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(827, 798);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ButtonReset);
             this.Controls.Add(this.ButtonSave);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "InvoiceForm";
             this.Text = "Invoice Generation";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            //this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            this.groupBoxEMIDetails.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEMIDetail)).EndInit();
+            this.groupBoxPayment.ResumeLayout(false);
+            this.groupBoxPayment.PerformLayout();
+            this.groupBoxCustomerDetail.ResumeLayout(false);
+            this.groupBoxCustomerDetail.PerformLayout();
+            this.groupBoxInvoiceTable.ResumeLayout(false);
+            this.groupBoxInvoiceTable.PerformLayout();
+            this.groupBoxProductDetail.ResumeLayout(false);
+            this.groupBoxProductDetail.PerformLayout();
+            this.groupBoxProductName.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -604,54 +604,54 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.GroupBox groupBoxProductName;
+        private System.Windows.Forms.GroupBox groupBoxProductDetail;
+        private System.Windows.Forms.TextBox textBoxAvailableQuantity;
+        private System.Windows.Forms.TextBox textBoxProductName;
+        private System.Windows.Forms.Label labelPrice;
+        private System.Windows.Forms.Label labelTotalQuantity;
+        private System.Windows.Forms.Label labelAvailableQuantity;
+        private System.Windows.Forms.Label labelProductName;
+        private System.Windows.Forms.TextBox textBoxPrice;
+        private System.Windows.Forms.TextBox textBoxTotalQuantity;
+        private System.Windows.Forms.GroupBox groupBoxInvoiceTable;
+        private System.Windows.Forms.Label labelSGSTAmount;
+        private System.Windows.Forms.Label labelCGSTAmount;
+        private System.Windows.Forms.Label labelTotalPrice;
+        private System.Windows.Forms.Label labelQuantityRequired;
+        private System.Windows.Forms.Label labelInvoiceDate;
+        private System.Windows.Forms.TextBox textBoxSgstAmount;
+        private System.Windows.Forms.TextBox textBoxCGSTAmount;
+        private System.Windows.Forms.TextBox textBoxPercentSGST;
+        private System.Windows.Forms.TextBox textBoxPercentCGST;
+        private System.Windows.Forms.TextBox textBoxTotalPrice;
+        private System.Windows.Forms.TextBox textBoxQuantityRequired;
+        private System.Windows.Forms.DateTimePicker dateTimePickerInvoiceDate;
+        private System.Windows.Forms.GroupBox groupBoxCustomerDetail;
+        private System.Windows.Forms.TextBox textBoxLastName;
+        private System.Windows.Forms.TextBox textBoxFirstName;
+        private System.Windows.Forms.Label labelPaidAmount;
+        private System.Windows.Forms.Label labelMobileNo;
+        private System.Windows.Forms.Label labelGender;
+        private System.Windows.Forms.Label labelLastName;
+        private System.Windows.Forms.Label labelFirstName;
+        private System.Windows.Forms.RadioButton radioButtonOther;
+        private System.Windows.Forms.RadioButton radioButtonFemale;
+        private System.Windows.Forms.RadioButton radioButtonMale;
+        private System.Windows.Forms.TextBox textBoxPaidAmount;
+        private System.Windows.Forms.TextBox textBoxMobileNo;
+        private System.Windows.Forms.GroupBox groupBoxEMIDetails;
+        private System.Windows.Forms.DataGridView dataGridViewEMIDetail;
+        private System.Windows.Forms.GroupBox groupBoxPayment;
+        private System.Windows.Forms.Label labelSoldPersonId;
+        private System.Windows.Forms.Label labelNetAmount;
+        private System.Windows.Forms.RadioButton radioButtonEMI;
+        private System.Windows.Forms.RadioButton radioButtonCash;
+        private System.Windows.Forms.TextBox textBoxSoldPersonId;
+        private System.Windows.Forms.TextBox textBoxNetAmount;
+        private System.Windows.Forms.ListBox listBoxProductName;
         private System.Windows.Forms.Button ButtonSave;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ButtonReset;
     }
 }
 

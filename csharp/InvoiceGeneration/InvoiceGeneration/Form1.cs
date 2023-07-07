@@ -11,39 +11,39 @@ using System.Data.SqlClient;
 
 namespace InvoiceGeneration
 {
-    public partial class Form1 : Form
+    public partial class InvoiceForm : Form
     {
-        public Form1()
+        public InvoiceForm()
         {
             InitializeComponent();
-            dateTimePicker1.Value = DateTime.Today;
-            dateTimePicker1.MinDate = DateTime.Today;
+            dateTimePickerInvoiceDate.Value = DateTime.Today;
+            dateTimePickerInvoiceDate.MinDate = DateTime.Today;
         }
 
         
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FormLoad1(object sender, EventArgs e)
         {
             //fill list box with product name
             DataSet ds = Invoice.GetProduct();
-            listBox1.DataSource = ds.Tables[0];
-            listBox1.DisplayMember = "Name";
-            listBox1.ValueMember = "ID";
+            listBoxProductName.DataSource = ds.Tables[0];
+            listBoxProductName.DisplayMember = "Name";
+            listBoxProductName.ValueMember = "ID";
 
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //to fill detaild according to selected product
-            DataSet ds1 = Invoice.GetProductDetail(listBox1.Text);
+            DataSet ds1 = Invoice.GetProductDetail(listBoxProductName.Text);
             foreach (DataRow dr in ds1.Tables[0].Rows)
             { 
-                textBox1.Text = dr["Name"].ToString();
-                textBox2.Text = dr["AVAILABLE_QTY"].ToString();
-                textBox3.Text = dr["SELL_QTY"].ToString();
-                textBox4.Text = dr["PRICE_PER_UNIT"].ToString();
-                textBox7.Text = dr["CGST"].ToString();
-                textBox8.Text = dr["SGST"].ToString();
+                textBoxProductName.Text = dr["Name"].ToString();
+                textBoxAvailableQuantity.Text = dr["AVAILABLE_QTY"].ToString();
+                textBoxTotalQuantity.Text = dr["SELL_QTY"].ToString();
+                textBoxPrice.Text = dr["PRICE_PER_UNIT"].ToString();
+                textBoxPercentCGST.Text = dr["CGST"].ToString();
+                textBoxPercentSGST.Text = dr["SGST"].ToString();
 
             }
             
@@ -56,15 +56,15 @@ namespace InvoiceGeneration
 
         public void calculate()
         {   //calculate gst and total amount
-            double cgstamount = Convert.ToDouble(textBox4.Text) * Convert.ToDouble(textBox7.Text) / 100;
-            textBox9.Text = cgstamount.ToString();
+            double cgstamount = Convert.ToDouble(textBoxPrice.Text) * Convert.ToDouble(textBoxPercentCGST.Text) / 100;
+            textBoxCGSTAmount.Text = cgstamount.ToString();
 
-            double sgstamount = Convert.ToDouble(textBox4.Text) * Convert.ToDouble(textBox8.Text) / 100;
-            textBox10.Text = sgstamount.ToString();
+            double sgstamount = Convert.ToDouble(textBoxPrice.Text) * Convert.ToDouble(textBoxPercentSGST.Text) / 100;
+            textBoxSgstAmount.Text = sgstamount.ToString();
 
-            double Total = Convert.ToDouble(textBox4.Text) * Convert.ToDouble(textBox5.Text);
+            double Total = Convert.ToDouble(textBoxPrice.Text) * Convert.ToDouble(textBoxQuantityRequired.Text);
             double totalprice = Total + cgstamount + sgstamount;
-            textBox6.Text = totalprice.ToString();
+            textBoxTotalPrice.Text = totalprice.ToString();
         }
 
         private void textBox13_KeyPress(object sender, KeyPressEventArgs e)
@@ -78,18 +78,18 @@ namespace InvoiceGeneration
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            if(radioButton4.Checked)
+            if(radioButtonCash.Checked)
             {
-                textBox14.Text = textBox6.Text;
-                textBox15.Text = textBox6.Text;
+                textBoxPaidAmount.Text = textBoxTotalPrice.Text;
+                textBoxNetAmount.Text = textBoxTotalPrice.Text;
             }
         }
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
-            textBox14.Text = "";
-            textBox15.Text = "";
-            if (textBox14.Text=="")
+            textBoxPaidAmount.Text = "";
+            textBoxNetAmount.Text = "";
+            if (textBoxPaidAmount.Text=="")
             {
                 MessageBox.Show("Please fill price ");
             }
@@ -100,12 +100,12 @@ namespace InvoiceGeneration
 
         public void net_amount()
         {
-            double price = Convert.ToDouble(textBox6.Text);
-            double total = Convert.ToDouble(textBox14.Text);
+            double price = Convert.ToDouble(textBoxTotalPrice.Text);
+            double total = Convert.ToDouble(textBoxPaidAmount.Text);
             if(price>total)
             {
                 double amount = price - total;
-                textBox15.Text = amount.ToString();
+                textBoxNetAmount.Text = amount.ToString();
             }
             else
             {
@@ -126,21 +126,21 @@ namespace InvoiceGeneration
 
         public void clear_all()
         {
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
-            textBox5.Clear();
-            textBox6.Clear();
-            textBox7.Clear();
-            textBox8.Clear();
-            textBox9.Clear();
-            textBox10.Clear();
-            textBox11.Clear();
-            textBox12.Clear();
-            textBox13.Clear();
+            textBoxProductName.Clear();
+            textBoxAvailableQuantity.Clear();
+            textBoxTotalQuantity.Clear();
+            textBoxPrice.Clear();
+            textBoxQuantityRequired.Clear();
+            textBoxTotalPrice.Clear();
+            textBoxPercentCGST.Clear();
+            textBoxPercentSGST.Clear();
+            textBoxCGSTAmount.Clear();
+            textBoxSgstAmount.Clear();
+            textBoxFirstName.Clear();
+            textBoxLastName.Clear();
+            textBoxMobileNo.Clear();
             
-            textBox16.Clear();
+            textBoxSoldPersonId.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e)
