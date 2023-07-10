@@ -1,0 +1,29 @@
+﻿<form action="form1" method="post">
+    <table>
+        <tr>
+            <td>Enter Id :</td>
+            <td><input type="text" name="txtid" /></td>
+        </tr>
+        <tr>
+            <td>Enter Name :</td>
+            <td><input type="text" name="txtname" /></td>
+        </tr>
+        <tr>
+            <td>Addon :</td>
+            <td><input type="checkbox" name="chkAddon" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit Form" /></td>
+        </tr>
+    </table>
+</form>
+
+
+<hr />
+<h4 style="color:purple">
+    <b>ID:</b> @ViewBag.ID <br />
+    <b>Name:</b> @ViewBag.Name <br />
+    <b>Addon:</b> @ViewBag.Addon
+
+</h4>
+

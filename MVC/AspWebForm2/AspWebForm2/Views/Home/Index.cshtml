@@ -1,0 +1,29 @@
+﻿@model AspWebForm2.Models.UserModel
+<h3>Strongly Typed</h3>
+<hr />
+
+@using (Html.BeginForm("Form2", "Home", FormMethod.Post))
+{
+
+    <table>
+        <tr>
+            <td>Enter Id :</td>
+            <td>@Html.TextBoxFor(m => m.Id)</td>
+        </tr>
+        <tr>
+            <td>Enter Name :</td>
+            <td>@Html.TextBoxFor(m => m.Name)</td>
+        </tr>
+        <tr>
+            <td>Addon :</td>
+            <td>@Html.CheckBoxFor(m => m.Addon)</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit Form"></td>
+        </tr>
+    </table>
+}
+<hr />
+<span>Id :</span>@ViewBag.Id <br />
+<span>Name :</span>@ViewBag.Name <br />
+<span>Addon :</span>@ViewBag.Addon
