@@ -16,18 +16,13 @@
             <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
         </address>
     <address>
-            <asp:ImageButton ID="ImageButton1" runat="server" Height="75px" Width="136px" value="Menu" />
+&nbsp;   
+   
         </address>
-    <address>
-            &nbsp;</address>
+   
     </main>
 </asp:Content>
  
 
 
 
-<asp:content ID ="C2" ContentPlaceHolderID ="ContentPlaceHolder4" runat="Server">
-
-
-
-</asp:content>

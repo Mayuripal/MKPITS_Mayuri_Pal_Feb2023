@@ -65,6 +65,16 @@
         </div>
        </div>
            </section>
+        <hr />
+     
+        <br />
+        <secton>
+           <center> <h3 style="color:crimson;font-family:'Bradley Hand ITC';"><i>Book Your Stay With Us !</i></h3></center>
+            <br />
+            <div>
+               
+            </div>
+        </secton>
     </main>
     
 </asp:Content>

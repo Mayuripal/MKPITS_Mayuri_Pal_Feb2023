@@ -11,7 +11,7 @@
     <h2>SignUp Form</h2>
     <br />
     <br />
-    <b>Mail : </b> @Html.TextBoxFor(m=>m.Email,new{@Value="Email"})
+    <b>Email : </b> @Html.TextBoxFor(m=>m.Email,new{@Value="Email"})
 
     <br />
     <br />
@@ -21,13 +21,15 @@
 
     <br />
     <br />
-    <input type="submit" value="signup" />
+    <input type="submit" value="Login" style="color:darkgreen;font-family:'Times New Roman', Times, serif;" /> <br />
+    <i>Not a member </i>
+
+    <a href="/Signup/Register">
+    Signup Now</a>
 }
 
 
 <hr />
-<h3> signup details :</h3>
-Email is : @ViewBag.email
-<br />
-Password is : @ViewBag.password
+<h5 style="color:darkgreen;"> Signup details :</h5>
+@ViewBag.password
 <br />
