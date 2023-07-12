@@ -67,6 +67,7 @@ namespace AspWebForm4.Controllers
             con.Close();
         }
 
+       
         [HttpPost]
         public ActionResult DeleteEmployee(EmpModel obj)
         {

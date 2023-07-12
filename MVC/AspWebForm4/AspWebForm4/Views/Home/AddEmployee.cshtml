@@ -55,7 +55,7 @@
                     sucess: alert("record inserted")
                  });
         });
-
+       
         $("#btnUpdate").click(function ()
         {
             $.ajax(
@@ -78,6 +78,8 @@
                     url: "/Home/DeleteEmployee",
                     data: {
                         Name: $("#txtName").val(),
+                        Address: $("#txtAddress").val(),
+                        City:$("#txtCity").val()
                     },
                     success: alert("record deleted")
                 });
