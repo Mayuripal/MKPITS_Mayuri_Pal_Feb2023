@@ -33,13 +33,14 @@ namespace BankKyc
                     {
                         gen = "Female";
                     }
-                    string query = "insert into TableKyc values(@FirstName,@LastName,@Mobile,@Email,@Gender)";
+                    string query = "insert into TableKyc values(@FirstName,@LastName,@Mobileno,@Email,@Gender)";
                     cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@FirstName", TextBoxFirstName.Text);
                     cmd.Parameters.AddWithValue("@LastName", TextBoxLastName.Text);
                     cmd.Parameters.AddWithValue("@Mobileno", TextBoxMobile.Text);
                     cmd.Parameters.AddWithValue("@Email", TextBoxEmail.Text);
                     cmd.Parameters.AddWithValue("@Gender", gen);
+
                     con.Open();
                     cmd.ExecuteNonQuery();
                     Label1.Text = "Kyc Registration";
@@ -49,6 +50,10 @@ namespace BankKyc
                     Label1.Text = ex.ToString();
                 }
                 finally { con.Close(); }
+            }
+            else
+            {
+                Label1.Text = "Page not load";
             }
         }
     }
