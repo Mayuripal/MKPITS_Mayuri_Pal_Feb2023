@@ -3,18 +3,19 @@ using PlantNursery.Models;
 
 namespace PlantNursery.Controllers
 {
-    public class SignupController : Controller
+    public class RegisterController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
 
-      
-        public ActionResult Signup(SignUpModel u)
+        public ActionResult Register(Register r)
         {
-            ViewBag.email = u.Email;
-            string psw = u.Password;
+            ViewBag.firstname = r.FirstName;
+            ViewBag.lastname=r.LastName;
+            ViewBag.email = r.Email;
+            string psw = r.Password;
             if (psw == "123456")
             {
                 ViewBag.password = "Login Sucessfully";
@@ -23,10 +24,8 @@ namespace PlantNursery.Controllers
             {
                 ViewBag.password = "Incorrect Pasword";
             }
+            ViewBag.mob=r.Mobile;
             return View();
         }
-
-  
-       
     }
 }

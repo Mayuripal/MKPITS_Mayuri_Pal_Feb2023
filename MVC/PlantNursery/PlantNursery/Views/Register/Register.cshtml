@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Register";
+}
+@model PlantNursery.Models.Register
+@using (Html.BeginForm("Register", "Register", FormMethod.Post))
+{
+    <h2>Registration Form</h2>
+    <br />
+    <br />
+    <b>FirstName : </b> @Html.TextBoxFor(m=>m.FirstName,new{@Value="FirstName"})
+    <br />
+    <br />
+    <b>LastName : </b> @Html.TextBoxFor(m=>m.LastName,new{@Value="LastName"})
+
+    <br />
+    <br />
+    <b>Email : </b> @Html.TextBoxFor(m=>m.Email,new{@Value="Email"})
+
+    <br />
+    <br />
+    <b>Password : </b>@Html.PasswordFor(m=>m.Password,new{@Value="Password"})
+    <br />
+    <br />
+    <b>Verify : </b>
+
+    @Html.PasswordFor(m=>m.Password,new{@Value="Password"})
+    <br />
+    <br />
+   
+    <b>Mobile no. : </b>
+
+    @Html.TextBoxFor(m=>m.Mobile,new{@Value="Mobile"})
+    <br />
+    <br />
+    <input type="submit" value="Register" style="color:darkgreen;font-family:'Times New Roman', Times, serif;" />
+    <br />
+   
+
+    <p>All ready an account </p><a href="/Signup/Signup">Login</a>
+}
