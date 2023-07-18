@@ -15,6 +15,14 @@ namespace Form1
         public FormCourseRegistration()
         {
             InitializeComponent();
+            // for todays date 
+            dateTimePickerPaymentDate.Value = DateTime.Now;
+            dateTimePickerPaymentDate.MinDate = DateTime.Today;
+        }
+
+        private void FormCourseRegistration_Load(object sender, EventArgs e)
+        {
+            // 
         }
     }
 }

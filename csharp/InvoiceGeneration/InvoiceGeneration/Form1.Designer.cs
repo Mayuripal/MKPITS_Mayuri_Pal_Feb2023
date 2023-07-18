@@ -392,7 +392,6 @@
             this.textBoxQuantityRequired.Name = "textBoxQuantityRequired";
             this.textBoxQuantityRequired.Size = new System.Drawing.Size(152, 26);
             this.textBoxQuantityRequired.TabIndex = 3;
-            //this.textBoxQuantityRequired.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // dateTimePickerInvoiceDate
             // 
@@ -550,7 +549,6 @@
             this.listBoxProductName.Name = "listBoxProductName";
             this.listBoxProductName.Size = new System.Drawing.Size(304, 144);
             this.listBoxProductName.TabIndex = 0;
-            //this.listBoxProductName.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // ButtonSave
             // 
@@ -584,7 +582,6 @@
             this.MaximizeBox = false;
             this.Name = "InvoiceForm";
             this.Text = "Invoice Generation";
-            //this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.groupBoxEMIDetails.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEMIDetail)).EndInit();
